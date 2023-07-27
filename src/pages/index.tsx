@@ -1,118 +1,138 @@
+'use client'
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { useEffect, useState } from 'react'
+import { Head } from 'next/document'
+import sample from '@/public/images/BRN0-0.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const mockData = {
+  name: 'Lorem Ipsum',
+  tagline: 'Dolor sit amet consectetur adipiscing',
+  menu: {
+    items: [],
+    filters: [],
+    categories: [],
+  },
+  specials: {},
+  aboutUs: {
+    headline: '',
+    secondary: '',
+  },
+  schedule: [{ day: 'M' }, { day: 'T' }, { day: 'W' }, { day: 'TH' }, { day: 'F' }, { day: 'S' }, { day: 'SU' }],
+  specialSchedule: [
+    {
+      date: 29,
+      month: 7,
+      reason: 'Restaurant Anniversary',
+      schedule: {
+        open: 700,
+        close: 2300,
+        breaks: [
+          { breakStart: 1000, breakEnd: 1130 },
+          { breakStart: 1500, breakEnd: 1700 },
+        ],
+        comments: 'Complementary drink and appetizer with every meal',
+      },
+    },
+  ],
+  reservations: {},
+  orderTime: {},
+  user: {
+    order: {},
+    orderHistory: [],
+    details: {
+      address: '',
+      contactNo: 0,
+      email: '',
+    },
+  },
+  cart: [{}, {}],
+  contactDetails: {},
+}
+
 export default function Home() {
+  // TODO: Import css
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className=" flex h-screen w-screen flex-col bg-primary font-primaryFont md:flex-row">
+      <Header />
+    </div>
+  )
+}
+type SEACountryType = 'Philippines' | 'Myanmar' | 'Malaysia' | 'Indonesia' | 'Singapore' | 'Thailand' | 'Vietnam' | 'East Timor' | 'Brunei' | 'Laos' | 'Cambodia'
+
+const countries: SEACountryType[] = ['Brunei', 'Thailand', 'Philippines', 'Laos', 'Myanmar', 'Singapore', 'Indonesia', 'Vietnam', 'Malaysia', 'Cambodia', 'East Timor']
+
+type OpenStatuses = 'Open' | 'Closing Soon' | 'Closed'
+
+const Header = () => {
+  const data = mockData
+  const { name, tagline, specialSchedule, schedule } = data
+  const [open, setOpen] = useState<OpenStatuses>('Closed')
+
+  return (
+    <div className="flex w-full font-black md:h-full ">
+      <div className="relative flex h-full w-1/2 flex-col items-center border-r-4 border-r-accent text-accent">
+        <div className="pt-4 text-4xl">Today's Picks</div>
+        <div className="flex h-1/3 w-full items-center justify-around px-4 py-4">
+          <div className="flex h-1/2 w-1/3 flex-col">
+            <img src="/images/VNM28-2.png" className="h-full w-full object-cover " />
+            Vietnam
+          </div>
+          <div className="flex h-full w-1/3 flex-col place-self-end">
+            <img src="/images/TLS16-2.png" className="h-full w-2/3 object-cover" />
+            East Timor
+          </div>
         </div>
+        <div className="flex h-1/3 w-full items-center justify-end gap-20 py-4 pr-20">
+          <div className="flex h-full w-1/3 flex-col">
+            <img src="/images/IDN14-2.png" className="h-full w-full object-cover" />
+            Indonesia
+          </div>
+          <div className="flex h-full w-1/2 flex-col place-self-end">
+            <img src="/images/PHL10-2.png" className="h-2/3 w-full object-cover" />
+            Philippines
+          </div>
+        </div>
+        <div className="flex h-1/3 w-full items-center justify-around px-4 py-4">
+          <div className="flex h-full w-1/4 flex-col">
+            <img src="/images/BRN20-2.png" className="h-full w-full object-cover" />
+            Brunei
+          </div>
+          <div className="flex h-full w-1/3 flex-col place-self-end">
+            <img src="/images/THA23-2.png" className="h-full w-full object-cover" />
+            Thailand
+          </div>
+        </div>
+        {/* <div className="flex h-1/3 w-full items-center justify-start gap-40  py-4 pl-20">
+          <div className="flex h-full w-1/4 flex-col place-self-end">
+            <img src="/images/MYS18-2.png" className="h-full w-full object-cover" />
+            Malaysia
+          </div>
+          <div className="flex h-full w-1/4 flex-col place-self-end">
+            <img src="/images/SGP28-2.png" className="h-full w-full object-cover" />
+            Singapore
+          </div>
+        </div> */}
+        {/* Full big image */}
+        {/* <Image
+          src={'/images/IDN10-1.png'}
+                    fill={true}
+          objectFit="cover"
+          quality={100}
+          alt="lady holding chopsticks over a bowl of noodle salad"
+        /> */}
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex h-full w-1/2 flex-col items-center justify-center text-accent">
+        <div className="text-4xl">Menu</div>
+        <div className="font-medium">Appetizers</div>
+        <div className="font-medium">Mains</div>
+        <div className="font-medium">Dessert</div>
+        <div className="font-medium">Drinks</div>
+        <div className="font-medium">Dietary Restrictions</div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
