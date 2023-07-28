@@ -1,6 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
-const scrollbarHide = plugin(function ({ addUtilities }) {
+const scrollbarHide = plugin(function ({ addUtilities }: { addUtilities: any }) {
   addUtilities(
     {
       '.scrollbar-hide': {

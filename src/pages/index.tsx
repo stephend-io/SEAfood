@@ -1,30 +1,23 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { useEffect, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import { Head } from 'next/document'
 import sample from '@/public/images/BRN0-0.png'
 import { mock } from 'node:test'
 import { dateSplicer } from '@/utils'
+import Cart from './Cart'
+import Reservations from './Reservations'
+import Menu from './Menu'
+import Specials from './Specials'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const mockData = {
+const restaurantDetails = {
   name: 'Lorem Ipsum',
   tagline: 'Dolor sit amet consectetur adipiscing',
   address: '1234 Yonge St Toronto, ON M4T 1W5 Canada',
   phoneNo: '647 241 3030',
-  menu: {
-    items: [],
-    filters: [],
-    categories: [],
-  },
 
-  categories: ['Home', 'Appetizer', 'Main', 'Drink', 'Dessert', 'Cart'],
-  specials: {},
-  aboutUs: {
-    headline: '',
-    secondary: '',
-  },
   schedule: [
     ['3:00 pm', '10:30 pm'],
     ['11:30 am', '3:00 pm', '5:00 pm', '10:00 pm'],
@@ -35,44 +28,18 @@ const mockData = {
     ['11:30 am', '3:00 pm', '5:00 pm', '11:00 pm'],
   ],
   timezone: 'UTC-4',
-  specialSchedule: [
-    {
-      date: 29,
-      month: 7,
-      reason: 'Restaurant Anniversary',
-      schedule: {
-        open: 700,
-        close: 2300,
-        breaks: [
-          { breakStart: 1000, breakEnd: 1130 },
-          { breakStart: 1500, breakEnd: 1700 },
-        ],
-        comments: 'Complementary drink and appetizer with every meal',
-      },
-    },
-  ],
-  reservations: {},
-  orderTime: {},
-  user: {
-    order: {},
-    orderHistory: [],
-    details: {
-      address: '',
-      contactNo: 0,
-      email: '',
-    },
-  },
-  cart: [{}, {}],
-  contactDetails: {},
 }
+
+type NavCategories = 'Home' | 'Menu' | 'Specials' | 'Reservations' | 'Cart'
+const categories: NavCategories[] = ['Home', 'Menu', 'Specials', 'Reservations', 'Cart']
 
 export default function Home() {
   // TODO: Import css
-  const [category, setCategory] = useState(0)
+
   return (
     <div className="flex h-screen w-screen flex-col items-start justify-start bg-primary font-primaryFont text-secondary">
       <Header />
-      <Navbar />
+      <Body />
     </div>
   )
 }
@@ -83,31 +50,24 @@ const countries: SEACountryType[] = ['Brunei', 'Thailand', 'Philippines', 'Laos'
 type OpenStatuses = 'Open' | 'Closing Soon' | 'Closed'
 
 const Header = () => {
-  const data = mockData
+  // get actual data using getServerSideProps / getStaticProps ofc
+  const data = restaurantDetails
   const [date, setDate] = useState<Date>()
-  const [isOpen, setIsOpen] = useState(false)
-  // if (date) {
-  // console.log(data?.schedule[date?.getDay()])
-  // }
-  // const timeFrames: String[][] = dateSplicer(data?.schedule[date?.getDay()])
-  // console.log('timeFrames is: ')
-  // console.log(timeFrames)
 
   useEffect(() => {
     const today = new Date()
     setDate(today)
-    // console.log(`${mockData.schedule[today.getDay()].schedule.open / 100} >= ${today.getHours()} && ${mockData.schedule[today.getDay()].schedule.close / 100} <= ${today.getHours()}`)
-    // if (mockData.schedule[today.getDay()].schedule.open / 100 <= today.getHours() && mockData.schedule[today.getDay()].schedule.close / 100 >= today.getHours()) {
-    //   setIsOpen(true)
-    // }
   }, [])
+
   return (
     <div className="top-0 flex w-full items-center justify-around px-6 py-4 text-2xl scrollbar-hide">
       <div className="space-around flex w-1/3 flex-col gap-2 text-lg ">
         {data.address.split(',').map((str) => {
           return <div>{str}</div>
         })}
-        <div className="font-semibold">{data.phoneNo}</div>
+        <a className="font-semibold" href={`tel:${data.phoneNo.replaceAll(' ', '-')}`}>
+          {data.phoneNo}
+        </a>
       </div>
       <div className="space-around flex w-1/3 flex-col gap-2 text-center">
         <div className="text-4xl font-black uppercase">{data.name}</div>
@@ -115,35 +75,55 @@ const Header = () => {
       </div>
       <div className="flex w-1/3 flex-col items-end justify-end gap-2">
         <div className="font-semibold">Today's Hours:</div>
-        {/* {date?.getDay()} */}
-        {/* {new Date().getDay()} */}
-        {/* {date?.getDay() && <div>{data.schedule[date.getDay()]}</div>} */}
         {date?.getDay() &&
           dateSplicer(data.schedule[date?.getDay()]).map((dateFrame) => {
             return <div className="text-lg tracking-wide">{dateFrame}</div>
           })}
-
-        {/* {isOpen ? 'OPEN' : 'CLOSED'} */}
       </div>
     </div>
   )
 }
 
-const Navbar = () => {
-  const data = mockData
+type BodyProps = {
+  categories: NavCategories[]
+}
+const Body = () => {
+  const [selectedCategory, setSelectedCategory] = useState<NavCategories>('Menu')
+  return (
+    <div className=" w-full bg-primary text-secondary scrollbar-hide">
+      <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} categories={categories} />
+      {selectedCategory === 'Cart' && <Cart />}
+      {selectedCategory === 'Menu' && <Menu />}
+      {selectedCategory === 'Reservations' && <Reservations />}
+      {selectedCategory === 'Specials' && <Specials />}
+      {selectedCategory === 'Home' && <div className="h-full w-full ">home</div>}
+      {/* <div className="h-full w-full">test</div> */}
+    </div>
+  )
+}
+
+type NavbarProps = {
+  categories: NavCategories[]
+  selectedCategory: string
+  setSelectedCategory: React.Dispatch<SetStateAction<NavCategories>>
+}
+const Navbar = ({ categories, selectedCategory, setSelectedCategory }: NavbarProps) => {
   return (
     <div className="flex min-h-[40px] w-full justify-between  ">
-      {data.categories.map((category, index) => {
+      {categories.map((category, index) => {
         let last = false
-        if (index === data.categories.length - 1) {
+        if (index === categories.length - 1) {
           last = true
         }
         return (
           <button
             key={category}
-            className={`flex h-full w-full items-center justify-center border-b-2 border-t-2 border-dashed border-secondary p-4 font-medium transition-all duration-75 hover:scale-110 hover:border-l-2 hover:border-primary hover:bg-secondary hover:font-black hover:text-primary hover:shadow-xl active:saturate-150 ${
+            className={`${
+              category === selectedCategory ? 'bg-secondary font-black text-primary ' : 'bg-primary font-medium text-secondary '
+            } flex h-full w-full items-center justify-center border-b-2 border-t-2 border-dashed border-secondary p-4 transition-all duration-75 hover:scale-110 hover:border-l-2 hover:border-primary hover:bg-secondary hover:font-black hover:text-primary hover:shadow-xl active:saturate-150 ${
               !last && 'border-r-2'
             }`}
+            onClick={() => setSelectedCategory(category)}
           >
             {category}
           </button>
