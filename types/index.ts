@@ -27,22 +27,31 @@ export type FoodItemType = {
   type: CategoryType
   name: String
   description: String
-  price: Number
+  price: number
   diet: DietType[]
   allergens: AllergenType[]
   id: String
 }
 
-export type OrderType = {
-  [key: string]: {
-    items: {
-      id: String
-      quantity: Number
-      price: Number
-      modifications: String
-    }[]
+export type CartItem = {
+  id: string
+  item: {
+    // id: String
+    quantity: number
+    // price: number
+    modifications: String
   }
 }
+
+export type OrderType = CartItem[]
+// [key: string]: {
+//   items: {
+//     id: String
+//     quantity: number
+//     price: number
+//     modifications: String
+//   }[]
+// }
 
 export type CartType = OrderType[]
 
@@ -50,7 +59,7 @@ export type ReservationStatus = 'showed' | 'reschedule' | 'noshow'
 
 export type ReservationType = {
   date: Date
-  partySize: Number
+  partySize: number
   status: ReservationStatus
   instructions: String
 }

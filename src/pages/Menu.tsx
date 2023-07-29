@@ -1,6 +1,12 @@
+import { get, set } from 'idb-keyval'
 import { useEffect, useState } from 'react'
 import { MenuType } from '../../types'
 import Image from 'next/image'
+import { OrderType } from '../../types'
+import AbsoluteCart from '@/components/AbsoluteCart'
+import { useDispatch, useSelector } from 'react-redux'
+import cartSlice, { actions, addToCart, getTotalCartItems, setCartItems } from '@/store/cartSlice'
+import { getFontOverrideCss } from 'next/dist/server/font-utils'
 const mockData = {
   foodCategories: ['Appetizer', 'Main', 'Drink', 'Dessert'],
   specials: {},
@@ -180,6 +186,10 @@ const Menu = () => {
   const [itemNos, setItemNos] = useState<Record<string, number>>({})
   const [selectedMenuNumberItems, setSelectedMenuNumberItems] = useState(1)
 
+  const addToCartToo = useSelector(actions.addToCart)
+  const addToCartOne = useSelector(addToCart)
+  const dispatch = useDispatch()
+
   console.log('rerendered')
   // useEffect(() => {
   // 500ms timeout is to account for component transitioning and changing sizes
@@ -229,124 +239,127 @@ const Menu = () => {
   }
 
   return (
-    <div className="flex h-full w-full pt-6">
-      {/* SearchFilters */}
+    <div className="inherit flex w-full justify-around pt-6">
+      <AbsoluteCart />
+      <div className="flex h-full w-[97%] justify-around">
+        {/* Cart */}
+        {/* SearchFilters */}
 
-      {/* original sticky but has issues when all options are open */}
-      <div className={`filters-component relative top-0 h-[90%] w-1/3 pt-2 ${!showFilters && ' hidden '}`}>
-        <div className="mx-4 flex flex-col border-2 border-dashed border-secondary  p-4">
-          <div className="border-b-2 border-dashed border-secondary pb-4 ">
-            <div className="flex w-full items-center justify-between text-2xl font-bold">
-              <div>Categories:</div>
-              <button onClick={() => setCategoriesToggled((prev) => !prev)}>
-                <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!categoriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
-              </button>
-            </div>
-            <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!categoriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
-              {data.foodCategories.map((category) => {
-                return (
-                  <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
-                    <div className="flex items-center gap-1">
-                      <div>{category}</div>
-                      <Image width={30} height={30} alt={`icon of ${category}`} src={`/icons/${category}.svg`} />
+        {/* original sticky but has issues when all options are open */}
+        <div className={`filters-component relative top-0 h-[90%] w-1/3 pt-2 ${!showFilters && ' hidden '}`}>
+          <div className="mx-4 flex flex-col border-2 border-dashed border-secondary  p-4">
+            <div className="border-b-2 border-dashed border-secondary pb-4 ">
+              <div className="flex w-full items-center justify-between text-2xl font-bold">
+                <div>Categories:</div>
+                <button onClick={() => setCategoriesToggled((prev) => !prev)}>
+                  <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!categoriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
+                </button>
+              </div>
+              <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!categoriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
+                {data.foodCategories.map((category) => {
+                  return (
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                      <div className="flex items-center gap-1">
+                        <div>{category}</div>
+                        <Image width={30} height={30} alt={`icon of ${category}`} src={`/icons/${category}.svg`} />
+                      </div>
+                      <div className="h-4 w-4 rounded-sm bg-secondary"></div>
                     </div>
-                    <div className="h-4 w-4 rounded-sm bg-secondary"></div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+              </div>
+              <div>Selected categories here</div>
             </div>
-            <div>Selected categories here</div>
-          </div>
 
-          <div className="border-b-2 border-dashed border-secondary py-4 ">
-            <div className="flex w-full items-center justify-between text-2xl font-bold">
-              <div>Countries:</div>
-              <button onClick={() => setCountriesToggled((prev) => !prev)}>
-                <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!countriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
-              </button>
-            </div>
-            <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!countriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
-              {data.countries.map((country) => {
-                return (
-                  <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
-                    <div className="flex items-center gap-1">
-                      <div>{country}</div>
-                      <Image width={30} height={30} alt={`icon of ${country}`} src={`/icons/${country}.svg`} />
+            <div className="border-b-2 border-dashed border-secondary py-4 ">
+              <div className="flex w-full items-center justify-between text-2xl font-bold">
+                <div>Countries:</div>
+                <button onClick={() => setCountriesToggled((prev) => !prev)}>
+                  <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!countriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
+                </button>
+              </div>
+              <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!countriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
+                {data.countries.map((country) => {
+                  return (
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                      <div className="flex items-center gap-1">
+                        <div>{country}</div>
+                        <Image width={30} height={30} alt={`icon of ${country}`} src={`/icons/${country}.svg`} />
+                      </div>
+                      <div className="h-4 w-4 rounded-sm bg-secondary"></div>
                     </div>
-                    <div className="h-4 w-4 rounded-sm bg-secondary"></div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+              </div>
+              <div>Selected countries here</div>
             </div>
-            <div>Selected countries here</div>
-          </div>
-          <div className="border-b-2 border-dashed border-secondary py-4 ">
-            <div className="flex w-full items-center justify-between text-2xl font-bold">
-              <div>Allergens:</div>
-              <button onClick={() => setAllergensToggled((prev) => !prev)}>
-                <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!allergensToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
-              </button>
-            </div>
-            <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!allergensToggled ? 'max-h-[80vh]' : 'max-h-0'}`}>
-              {data.allergens.map((allergen) => {
-                return (
-                  <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
-                    <div className="flex items-center gap-1">
-                      <div>{allergen}</div>
-                      <Image width={30} height={30} alt={`icon of ${allergen}`} src={`/icons/${allergen}.svg`} />
+            <div className="border-b-2 border-dashed border-secondary py-4 ">
+              <div className="flex w-full items-center justify-between text-2xl font-bold">
+                <div>Allergens:</div>
+                <button onClick={() => setAllergensToggled((prev) => !prev)}>
+                  <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!allergensToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
+                </button>
+              </div>
+              <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!allergensToggled ? 'max-h-[80vh]' : 'max-h-0'}`}>
+                {data.allergens.map((allergen) => {
+                  return (
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                      <div className="flex items-center gap-1">
+                        <div>{allergen}</div>
+                        <Image width={30} height={30} alt={`icon of ${allergen}`} src={`/icons/${allergen}.svg`} />
+                      </div>
+                      <div className="h-4 w-4 rounded-sm bg-secondary"></div>
                     </div>
-                    <div className="h-4 w-4 rounded-sm bg-secondary"></div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+              </div>
+              <div>Selected allergens here</div>
             </div>
-            <div>Selected allergens here</div>
-          </div>
 
-          <div className="border-dashed border-secondary pt-4 ">
-            <div className="flex w-full items-center justify-between text-2xl font-bold">Price</div>
-            <div>range here</div>
+            <div className="border-dashed border-secondary pt-4 ">
+              <div className="flex w-full items-center justify-between text-2xl font-bold">Price</div>
+              <div>range here</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {isSearchOffScreen && (
-        <button
-          className="fixed bottom-4 left-4 transition-all duration-150"
-          onClick={() => {
-            const elem = document.querySelector('.filters-component')
-            elem?.scrollIntoView({ behavior: 'smooth' })
-          }}
-        >
-          <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!countriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
-        </button>
-      )}
+        {isSearchOffScreen && (
+          <button
+            className="fixed bottom-4 left-4 transition-all duration-150"
+            onClick={() => {
+              const elem = document.querySelector('.filters-component')
+              elem?.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            <Image width={20} height={20} alt={`down icon`} src={`icons/Chevron-Left.svg`} className={`${!countriesToggled ? 'rotate-90' : '-rotate-90'} transition-all duration-200`} />
+          </button>
+        )}
 
-      {/* End of Search Filters */}
+        {/* End of Search Filters */}
 
-      {/* Actual menu */}
-      <div className="h-full w-full ">
-        <div
-          className={`
-                 mt-2 flex w-full flex-wrap justify-center pr-4 `}
-        >
-          {data.items.map((foodItem, index) => {
-            return (
-              <div
-                className={`group relative z-0 flex aspect-square flex-col items-center justify-between overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all  duration-75 hover:z-50 hover:scale-105 hover:cursor-pointer hover:p-1 hover:shadow-2xl hover:outline hover:outline-4  md:w-[49%] lg:w-[33%] xl:w-[24%]`}
-                onMouseEnter={() => {
-                  setSelectedItemID(foodItem.id)
-                  const currItems = itemNos[foodItem.id]
-                  currItems ? setSelectedMenuNumberItems(currItems) : setSelectedMenuNumberItems(1)
-                }}
-                onMouseLeave={() => {
-                  const currItems = selectedMenuNumberItems
-                  currItems > 1 && setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
-                }}
-                key={foodItem.id}
-              >
-                {/* absolute hover */}
-                {/* <div className="invisible absolute left-0 top-0 z-50 h-[50vh] w-[50vw] group-hover:visible ">
+        {/* Actual menu */}
+        <div className="h-full w-full ">
+          <div
+            className={`
+                 mt-2 flex w-full flex-wrap justify-center  `}
+          >
+            {data.items.map((foodItem, index) => {
+              return (
+                <div
+                  className={`group relative z-0 flex w-full items-center justify-between gap-1 overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all duration-75 hover:z-50  hover:cursor-pointer hover:shadow-2xl hover:outline hover:outline-4 md:aspect-square md:w-[45%] md:flex-col md:hover:scale-105  md:hover:p-1 lg:w-[33%] xl:w-[24%]`}
+                  onMouseEnter={() => {
+                    setSelectedItemID(foodItem.id)
+                    const currItems = itemNos[foodItem.id]
+                    currItems ? setSelectedMenuNumberItems(currItems) : setSelectedMenuNumberItems(1)
+                  }}
+                  onMouseLeave={() => {
+                    const currItems = selectedMenuNumberItems
+                    currItems > 1 && setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
+                  }}
+                  key={foodItem.id}
+                >
+                  {/* absolute hover */}
+                  {/* <div className="invisible absolute left-0 top-0 z-50 h-[50vh] w-[50vw] group-hover:visible ">
                       <div className="relative flex h-full w-full">
                         <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
                       </div>
@@ -368,81 +381,92 @@ const Menu = () => {
                       </div>
                     </div>
   */}
-                {/* end of absolute hover */}
-                <div className="group relative flex h-full w-full justify-between">
-                  {/* <div className="hidden h-20 w-[90%] bg-green-300 group-hover:absolute group-hover:bottom-0"> */}
-                  {/* <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} /> */}
+                  {/* end of absolute hover */}
+                  <div className="group relative flex h-full w-full justify-between">
+                    {/* <div className="hidden h-20 w-[90%] bg-green-300 group-hover:absolute group-hover:bottom-0"> */}
+                    {/* <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} /> */}
 
-                  {/* Optional button to change between images if this is interestin */}
-                  {/* <div className="absolute right-0 top-1/2 z-50 hidden   w-full justify-between group-hover:flex">
+                    {/* Optional button to change between images if this is interestin */}
+                    {/* <div className="absolute right-0 top-1/2 z-50 hidden   w-full justify-between group-hover:flex">
                         <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'<'}</button>
                         <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'>'}</button>
                       </div> */}
-                  {selectedItemID === foodItem.id && (
-                    <div className="invisible bottom-2 z-50 flex h-[10%] w-full items-center justify-between self-end px-2 pb-4 group-hover:visible">
-                      <abbr title={foodItem.country}>
-                        <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
-                      </abbr>
-                      <div className="flex pb-2">
-                        <div className="flex items-center justify-center gap-2 rounded-lg bg-white p-2">
-                          <button
-                            // onClick={() => alert(`${itemNos[foodItem.id] ?? 1} orders of: ${foodItem.name}`)}
+                    {selectedItemID === foodItem.id && (
+                      <div className="invisible bottom-2 z-50 flex h-[10%] w-full items-center justify-between self-end px-2 pb-4 group-hover:visible">
+                        <abbr title={foodItem.country}>
+                          <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
+                        </abbr>
+                        <div className="flex pb-2">
+                          <div className="flex items-center justify-center gap-2 rounded-lg bg-white p-2">
+                            <button
+                              // onClick={() => alert(`${itemNos[foodItem.id] ?? 1} orders of: ${foodItem.name}`)}
 
-                            onClick={() => {
-                              setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
-                              alert(`${selectedMenuNumberItems} orders of: ${foodItem.name}`)
-                            }}
-                          >
-                            ✓
-                          </button>
-                          <button
-                            onClick={() => {
-                              // ! you were here
-                              // itemNos[foodItem.id] > 1 && setItemNos(prev => {...prev, itemNos[foodItem.id] - 1});
-                              // const newItemNos = {...itemNos, foodItem.id: 2};
-                              // ;(itemNos[foodItem.id] ?? 1) > 1 && setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] - 1 })
-                              selectedMenuNumberItems > 1 && setSelectedMenuNumberItems((prev) => prev - 1)
-                            }}
-                          >
-                            -
-                          </button>
-                          <div>{selectedMenuNumberItems} </div>
-                          <button
-                            // onClick={() => setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] ?? 1 + 1 })}
-                            className=" hover:bg-slate-200"
-                            onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}
-                          >
-                            +
-                          </button>
+                              onClick={() => {
+                                // setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
+                                alert('hit')
+                                dispatch(
+                                  addToCart({
+                                    id: foodItem.id,
+                                    item: {
+                                      quantity: selectedMenuNumberItems,
+                                      modifications: '',
+                                    },
+                                  })
+                                )
+                                // alert(`${selectedMenuNumberItems} orders of: ${foodItem.name}`)
+                              }}
+                            >
+                              ✓
+                            </button>
+                            <button
+                              onClick={() => {
+                                // ! you were here
+                                // itemNos[foodItem.id] > 1 && setItemNos(prev => {...prev, itemNos[foodItem.id] - 1});
+                                // const newItemNos = {...itemNos, foodItem.id: 2};
+                                // ;(itemNos[foodItem.id] ?? 1) > 1 && setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] - 1 })
+                                selectedMenuNumberItems > 1 && setSelectedMenuNumberItems((prev) => prev - 1)
+                              }}
+                            >
+                              -
+                            </button>
+                            <div>{selectedMenuNumberItems} </div>
+                            <button
+                              // onClick={() => setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] ?? 1 + 1 })}
+                              className=" hover:bg-slate-200"
+                              onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}
+                            >
+                              +
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  )}
+                    )}
 
-                  {/* </div> */}
+                    {/* </div> */}
 
-                  <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
-                </div>
-                <div className="flex w-full flex-col ">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-xl font-semibold">
-                      <div className="line-clamp-1 ">{foodItem.name}</div>
-
-                      <div className="flex max-w-[60%] pl-2 font-mono text-base">
-                        {foodItem.allergens?.map((allergen) => (
-                          <abbr title={allergen}>
-                            <Image width={25} height={25} alt={allergen} src={`/icons/${allergen}.svg`} />
-                          </abbr>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
+                    <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
                   </div>
-                  <div className="line-clamp-2 text-sm tracking-wide group-hover:line-clamp-none group-hover:text-xs">{foodItem.description}</div>
+                  <div className="flex w-full flex-col ">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center text-xl font-semibold">
+                        <div className="group-hover: line-clamp-1 truncate">{foodItem.name}</div>
+
+                        <div className="flex max-w-[60%] pl-2 font-mono text-base">
+                          {foodItem.allergens?.map((allergen) => (
+                            <abbr title={allergen}>
+                              <Image width={25} height={25} alt={allergen} src={`/icons/${allergen}.svg`} />
+                            </abbr>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
+                    </div>
+                    <div className="line-clamp-2 text-sm tracking-wide md:group-hover:line-clamp-none md:group-hover:text-xs">{foodItem.description}</div>
+                  </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -457,7 +481,7 @@ export default Menu
 //             {data.items.map((foodItem, index) => {
 //               return (
 //                 <div
-//                   className={`group relative z-0 flex aspect-square flex-col items-center justify-between overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all  duration-75 hover:z-50 hover:scale-105 hover:cursor-pointer hover:p-1 hover:shadow-2xl hover:outline hover:outline-4  md:w-[49%] lg:w-[33%] xl:w-[24%]`}
+//                   className={`group relative z-0 flex aspect-square flex-col items-center justify-between overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all  duration-75 hover:z-50 hover:scale-105 hover:cursor-pointer hover:p-1 hover:shadow-2xl hover:outline hover:outline-4  md:w-[45%] lg:w-[33%] xl:w-[24%]`}
 //                   onMouseEnter={() => setSelectedItemID(foodItem.id)}
 //                   key={foodItem.id}
 //                 >
