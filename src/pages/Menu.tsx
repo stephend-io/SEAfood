@@ -162,8 +162,132 @@ const mockData = {
       allergens: ['Peanuts'],
       id: 'IDN12',
     },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Gado-Gado',
+      description: 'A salad made with mixed vegetables, tofu, and hard-boiled eggs, topped with peanut sauce.',
+      price: 6.99,
+      diet: ['Vegetarian', 'Vegan'],
+      allergens: ['Peanuts'],
+      id: 'IDN0',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Lumpia Semarang',
+      description: 'Crispy spring rolls filled with bamboo shoots, shrimp, and chicken, served with a sweet and sour dipping sauce.',
+      price: 8.99,
+      diet: ['Pescatarian'],
+      allergens: ['Crustaceans', 'Soy', 'Wheat'],
+      id: 'IDN1',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Sate Ayam',
+      description: 'Grilled chicken skewers marinated in a fragrant blend of spices, served with peanut sauce.',
+      price: 9.99,
+      allergens: ['Peanuts'],
+      id: 'IDN2',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Siomay',
+      description: 'Steamed fish and shrimp dumplings served with a spicy peanut sauce and sweet soy sauce.',
+      price: 7.99,
+      diet: ['Pescatarian'],
+      allergens: ['Fish', 'Soy', 'Peanuts', 'Wheat'],
+      id: 'IDN3',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Martabak',
+      description: 'A savory stuffed pancake filled with minced meat, vegetables, and spices.',
+      price: 10.99,
+      allergens: ['Wheat', 'Soy'],
+      id: 'IDN4',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Otak-Otak',
+      description: 'Grilled fish cake made from ground fish mixed with spices and wrapped in banana leaves.',
+      price: 7.99,
+      diet: ['Pescatarian'],
+      allergens: ['Fish', 'Coconut'],
+      id: 'IDN5',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Perkedel Kentang',
+      description: 'Fried potato cakes made with mashed potatoes, onions, and spices.',
+      price: 5.99,
+      diet: ['Vegetarian', 'Vegan'],
+      id: 'IDN6',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Bakwan Jagung',
+      description: 'Crispy corn fritters made with sweet corn kernels, flour, and spices.',
+      price: 6.99,
+      diet: ['Vegetarian'],
+      id: 'IDN7',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Pempek',
+      description: 'Fishcake made from ground fish and tapioca flour, served with a tangy vinegar-based sauce.',
+      price: 8.99,
+      diet: ['Pescatarian', 'Gluten-Free'],
+      allergens: ['Fish'],
+      id: 'IDN8',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Appetizer',
+      name: 'Rujak',
+      description: 'A mixed fruit salad with a spicy tamarind dressing, often garnished with peanuts and fried shallots.',
+      price: 7.99,
+      diet: ['Vegetarian', 'Vegan'],
+      allergens: ['Peanuts'],
+      id: 'IDN9',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Main',
+      name: 'Nasi Goreng',
+      description: 'Indonesian-style fried rice cooked with a combination of meats, vegetables, and spices, usually served with a fried egg on top.',
+      price: 12.99,
+      id: 'IDN10',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Main',
+      name: 'Rendang',
+      description: 'A flavorful and spicy slow-cooked beef dish in a rich coconut-based sauce.',
+      price: 15.99,
+      allergens: ['Coconut'],
+      id: 'IDN11',
+    },
+    {
+      country: 'Indonesia',
+      type: 'Main',
+      name: 'Sate Ayam',
+      description: 'Grilled chicken skewers marinated in a fragrant blend of spices, served with peanut sauce and rice cakes.',
+      price: 14.99,
+      allergens: ['Peanuts'],
+      id: 'IDN12',
+    },
   ],
 }
+
+type MenuViews = 'Menu' | 'List' | 'Card'
 
 const Menu = () => {
   // fetched Data
@@ -172,6 +296,8 @@ const Menu = () => {
   const [countriesToggled, setCountriesToggled] = useState(false)
   const [allergensToggled, setAllergensToggled] = useState(false)
   const [isSearchOffScreen, setIsSearchOffScreen] = useState(false)
+  const [showFilters, setShowFilters] = useState(false)
+  const [menuView, setMenuView] = useState<MenuViews>('Menu')
 
   // useEffect(() => {
   // 500ms timeout is to account for component transitioning and changing sizes
@@ -213,26 +339,12 @@ const Menu = () => {
   }, [])
 
   return (
-    <div className="relative flex w-full pt-8">
+    <div className="flex h-full w-full pt-6">
       {/* SearchFilters */}
-      <div className="filters-component relative top-0 h-[90%] w-1/3">
-        {/* original sticky but has issues when all options are open */}
-        {/* <div className="sticky top-0 h-[90%] w-1/3 "> */}
-        <div className="m-4 flex flex-col border-2 border-dashed border-secondary  p-4">
-          {/* <div className="border-b-2 border-dashed border-secondary pb-2">
-            <div className="">Categories:</div>
-            {data.foodCategories.map((category) => {
-              return (
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1">
-                    <div>{category}</div>
-                    <Image width={30} height={30} alt={`icon of ${category}`} src={`/icons/${category}.svg`} />
-                  </div>
-                  <div className="h-4 w-4 rounded-sm bg-secondary"></div>
-                </div>
-              )
-            })}
-          </div> */}
+
+      {/* original sticky but has issues when all options are open */}
+      <div className={`filters-component relative top-0 h-[90%] w-1/3 pt-2 ${!showFilters && ' hidden '}`}>
+        <div className="mx-4 flex flex-col border-2 border-dashed border-secondary  p-4">
           <div className="border-b-2 border-dashed border-secondary pb-4 ">
             <div className="flex w-full items-center justify-between text-2xl font-bold">
               <div>Categories:</div>
@@ -254,7 +366,6 @@ const Menu = () => {
               })}
             </div>
             <div>Selected categories here</div>
-            {/* } */}
           </div>
 
           <div className="border-b-2 border-dashed border-secondary py-4 ">
@@ -278,7 +389,6 @@ const Menu = () => {
               })}
             </div>
             <div>Selected countries here</div>
-            {/* } */}
           </div>
           <div className="border-b-2 border-dashed border-secondary py-4 ">
             <div className="flex w-full items-center justify-between text-2xl font-bold">
@@ -301,25 +411,12 @@ const Menu = () => {
               })}
             </div>
             <div>Selected allergens here</div>
-            {/* } */}
           </div>
 
-          {/* 
-          <div className="border-dashed border-secondary pt-4">
-            <div>Allergens:</div>
-            {data.allergens.map((allergen) => {
-              return (
-                <div className="flex justify-between">
-                  <div className="flex items-center gap-1">
-                    <div>{allergen}</div>
-                    <Image width={30} height={30} alt={`icon of ${allergen}`} src={`/icons/${allergen}.svg`} />
-                  </div>
-
-                  <div className="h-4 w-4 rounded-sm bg-secondary"></div>
-                </div>
-              )
-            })}
-          </div> */}
+          <div className="border-dashed border-secondary pt-4 ">
+            <div className="flex w-full items-center justify-between text-2xl font-bold">Price</div>
+            <div>range here</div>
+          </div>
         </div>
       </div>
 
@@ -338,33 +435,118 @@ const Menu = () => {
       {/* End of Search Filters */}
 
       {/* Actual menu */}
-      <div>
+      <div className="h-full w-full ">
         {data.foodCategories.map((category, index) => {
           return (
-            <div className={`${index !== data.foodCategories.length - 1 && 'border-b-2 border-dashed border-b-secondary'} flex flex-col gap-2  p-4`}>
-              <div className="text-4xl font-black">{category}</div>
-              {data.items.map((foodItem) => {
+            // original horizontal card layout
+            // <div className={`${index !== data.foodCategories.length - 1 && 'border-b-2 border-dashed border-b-secondary'} flex flex-col gap-2  p-4`}>
+            //   {data.items.map((foodItem) => {
+            //     return (
+            //       <div className="flex w-full items-center justify-center ">
+            //         <div className="relative mr-4 h-20 w-40">
+            //           <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
+            //         </div>
+            //         <div></div>
+            //         <div className="flex w-full flex-col">
+            //           <div className="flex items-center justify-between">
+            //             <div className="flex items-center text-xl font-semibold">
+            //               <div>{foodItem.name}</div>
+            //               <div className="flex pl-2 font-mono text-base">
+            //                 {foodItem.allergens?.map((allergen) => (
+            //                   <abbr title={allergen}>
+            //                     <Image width={35} height={35} alt={allergen} src={`/icons/${allergen}.svg`} />
+            //                   </abbr>
+            //                 ))}
+            //               </div>
+            //             </div>
+            //             <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
+            //           </div>
+            //           <div className="text-lg tracking-wide">{foodItem.description}</div>
+            //         </div>
+            //       </div>
+            //     )
+
+            //   })}
+            // </div>
+            // trying out ecommerce-like layout
+
+            // ${index !== data.foodCategories.length - 1 && 'border-b-2 border-dashed border-b-secondary '}
+            <div
+              className={`
+                 mt-2 flex w-full flex-wrap justify-center pr-4 `}
+            >
+              {data.items.map((foodItem, index) => {
                 return (
-                  <div className="flex w-full items-center justify-center">
-                    <div className="relative mr-4 h-20 w-40">
+                  <div
+                    className={`group relative z-0 flex aspect-square flex-col items-center justify-between overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all  duration-75 hover:z-50 hover:scale-105 hover:cursor-pointer hover:p-0 hover:shadow-2xl hover:outline hover:outline-4 hover:saturate-150 md:w-[49%] lg:w-[33%] xl:w-[24%]`}
+                  >
+                    {/* absolute hover */}
+                    {/* <div className="invisible absolute left-0 top-0 z-50 h-[50vh] w-[50vw] group-hover:visible ">
+                      <div className="relative flex h-full w-full">
+                        <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
+                      </div>
+                      <div className="flex w-full flex-col ">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center text-xl font-semibold">
+                            <div className="line-clamp-1 ">{foodItem.name}</div>
+                            <div className="flex pl-2 font-mono text-base">
+                              {foodItem.allergens?.map((allergen) => (
+                                <abbr title={allergen}>
+                                  <Image width={35} height={35} alt={allergen} src={`/icons/${allergen}.svg`} />
+                                </abbr>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
+                        </div>
+                        <div className=" line-clamp-2 text-lg tracking-wide">{foodItem.description}</div>
+                      </div>
+                    </div>
+  */}
+                    {/* end of absolute hover */}
+                    <div className="group relative flex h-full w-full justify-between">
+                      {/* <div className="hidden h-20 w-[90%] bg-green-300 group-hover:absolute group-hover:bottom-0"> */}
+                      {/* <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} /> */}
+
+                      <div className="absolute right-0 top-1/2 z-50 hidden   w-full justify-between group-hover:flex">
+                        <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'<'}</button>
+                        <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'>'}</button>
+                      </div>
+                      <div className="invisible bottom-2 z-50 flex h-[10%] w-full justify-between  self-end group-hover:visible">
+                        <abbr title={foodItem.country}>
+                          <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
+                        </abbr>
+                        <div className="flex ">
+                          <div className="flex items-center justify-center gap-2 rounded-lg bg-white p-2">
+                            <button>-</button>
+                            <div>0</div>
+                            <button>+</button>
+                          </div>
+
+                          <div>16</div>
+                        </div>
+                      </div>
+
+                      {/* </div> */}
+
                       <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
                     </div>
-                    <div></div>
-                    <div className="flex w-full flex-col">
+                    <div className="flex w-full flex-col ">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center text-xl font-semibold">
-                          <div>{foodItem.name}</div>
-                          <div className="flex pl-2 font-mono text-base">
+                          <div className="line-clamp-1 ">{foodItem.name}</div>
+
+                          <div className="flex max-w-[60%] pl-2 font-mono text-base">
                             {foodItem.allergens?.map((allergen) => (
                               <abbr title={allergen}>
-                                <Image width={35} height={35} alt={allergen} src={`/icons/${allergen}.svg`} />
+                                <Image width={25} height={25} alt={allergen} src={`/icons/${allergen}.svg`} />
                               </abbr>
                             ))}
                           </div>
                         </div>
                         <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
                       </div>
-                      <div className="text-lg tracking-wide">{foodItem.description}</div>
+                      <div className="text-md line-clamp-2 tracking-wide group-hover:text-sm ">{foodItem.description}</div>
                     </div>
                   </div>
                 )
