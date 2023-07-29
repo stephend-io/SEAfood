@@ -340,7 +340,7 @@ const Menu = () => {
                   currItems ? setSelectedMenuNumberItems(currItems) : setSelectedMenuNumberItems(1)
                 }}
                 onMouseLeave={() => {
-                  const currItems = itemNos[foodItem.id]
+                  const currItems = selectedMenuNumberItems
                   currItems > 1 && setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
                 }}
                 key={foodItem.id}
