@@ -3,6 +3,7 @@ import { authSlice } from './authSlice'
 import { cartSlice } from './cartSlice'
 import { createWrapper } from 'next-redux-wrapper'
 import { persistReducer, persistStore } from 'redux-persist'
+import { menuSlice } from './menuSlice'
 // import storage from 'redux-persist/lib/storage'
 
 // Fix from https://github.com/rt2zz/redux-persist/issues/1208
@@ -23,6 +24,7 @@ const createNoopStorage = () => {
 const rootReducer = combineReducers({
   [authSlice.name]: authSlice.reducer,
   [cartSlice.name]: cartSlice.reducer,
+  [menuSlice.name]: menuSlice.reducer,
 })
 
 const makeConfiguredStore = () =>

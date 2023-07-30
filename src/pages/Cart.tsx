@@ -24,7 +24,7 @@ const Cart = () => {
   }, [cartItems])
 
   return (
-    <div className="flex h-full w-full flex-wrap overflow-scroll p-4">
+    <div className="flex h-full w-full flex-wrap p-4">
       <div className="w-1/3">
         {Object.entries(foodItems).map((category, index) => {
           const [categoryName, categoryValue] = category

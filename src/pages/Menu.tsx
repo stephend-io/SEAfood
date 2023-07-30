@@ -7,6 +7,8 @@ import AbsoluteCart from '@/components/AbsoluteCart'
 import { useDispatch, useSelector } from 'react-redux'
 import cartSlice, { actions, addToCart, getTotalCartItems, setCartItems } from '@/store/cartSlice'
 import { getFontOverrideCss } from 'next/dist/server/font-utils'
+import FoodModal from '@/components/FoodModal'
+import { getSelectedMenuItem, setSelectedMenuItem } from '@/store/menuSlice'
 const mockData = {
   foodCategories: ['Appetizer', 'Main', 'Drink', 'Dessert'],
   specials: {},
@@ -237,9 +239,9 @@ const Menu = () => {
 
   return (
     <div className="inherit flex w-full justify-around pt-6">
-      <AbsoluteCart />
-      <div className="flex h-full w-[97%] justify-around">
+      <div className="flex h-full w-[97%] justify-around bg-primary">
         {/* Cart */}
+        <AbsoluteCart />
         {/* SearchFilters */}
 
         {/* original sticky but has issues when all options are open */}
@@ -357,6 +359,9 @@ const Menu = () => {
                     const currItems = selectedMenuNumberItems
                     currItems > 1 && setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
                   }}
+                  onClick={() => {
+                    dispatch(setSelectedMenuItem(foodItem.id))
+                  }}
                   key={foodItem.id}
                 >
                   {/* absolute hover */}
@@ -397,8 +402,22 @@ const Menu = () => {
                         <abbr title={foodItem.country}>
                           <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
                         </abbr>
-                        <div className="flex pb-2">
-                          <div className="group flex items-center justify-center gap-2 rounded-lg bg-white p-2 transition-colors duration-150 ">
+                        <div className="flex pb-2" onClick={(e) => e.stopPropagation()}>
+                          <div className="flex items-center justify-center gap-2  font-medium">
+                            <div className="group flex items-center justify-center gap-2 rounded-lg bg-white  transition-colors duration-150 ">
+                              <button
+                                className="rounded-l-lg  px-2 py-1 hover:bg-secondary hover:text-primary active:saturate-150"
+                                onClick={() => {
+                                  selectedMenuNumberItems > 1 && setSelectedMenuNumberItems((prev) => prev - 1)
+                                }}
+                              >
+                                -
+                              </button>
+                              <div>{selectedMenuNumberItems} </div>
+                              <button className="rounded-r-lg  px-2 py-1 hover:bg-secondary hover:text-primary active:saturate-150" onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}>
+                                +
+                              </button>
+                            </div>
                             <button
                               onClick={() => {
                                 dispatch(
@@ -409,19 +428,8 @@ const Menu = () => {
                                   })
                                 )
                               }}
-                              className="h-full w-full active:bg-secondary active:text-primary"
+                              className="text-gray h-6 w-6 rounded-full bg-green-200 font-black text-gray-600 hover:bg-green-600 hover:text-gray-200 active:bg-secondary active:text-primary"
                             >
-                              ✓
-                            </button>
-                            <button
-                              onClick={() => {
-                                selectedMenuNumberItems > 1 && setSelectedMenuNumberItems((prev) => prev - 1)
-                              }}
-                            >
-                              -
-                            </button>
-                            <div>{selectedMenuNumberItems} </div>
-                            <button className=" hover:bg-slate-200" onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}>
                               +
                             </button>
                           </div>

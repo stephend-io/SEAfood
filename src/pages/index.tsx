@@ -9,7 +9,10 @@ import Cart from './Cart'
 import Reservations from './Reservations'
 import Menu from './Menu'
 import Specials from './Specials'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import AbsoluteCart, { CartToo } from '@/components/AbsoluteCart'
+import { getSelectedMenuItem } from '@/store/menuSlice'
+import FoodModal from '@/components/FoodModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,10 +40,13 @@ const categories: NavCategories[] = ['Home', 'Menu', 'Specials', 'Reservations',
 export default function Home() {
   // TODO: Import css
 
+  const id = useSelector(getSelectedMenuItem)
   return (
-    <div className="flex h-screen w-screen flex-col items-start justify-start bg-primary font-primaryFont text-secondary">
+    <div className="relative flex w-full flex-col items-start justify-start bg-primary font-primaryFont text-secondary scrollbar-hide">
+      {id && <FoodModal />}
       <Header />
       <Body />
+      <CartToo />
     </div>
   )
 }
@@ -61,7 +67,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className="top-0 flex w-full items-center justify-around px-6 py-4 text-2xl scrollbar-hide">
+    <div className=" flex w-full items-center justify-around overflow-hidden  py-4 text-2xl ">
       <div className="space-around flex w-1/3 flex-col gap-2 text-lg ">
         {data.address.split(',').map((str) => {
           return <div>{str}</div>
@@ -91,7 +97,7 @@ type BodyProps = {
 const Body = () => {
   const [selectedCategory, setSelectedCategory] = useState<NavCategories>('Menu')
   return (
-    <div className=" w-full bg-primary text-secondary scrollbar-hide">
+    <div className=" w-full overflow-hidden bg-primary text-secondary scrollbar-hide">
       {/* <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} categories={categories} /> */}
       {selectedCategory === 'Cart' && <Cart />}
       {selectedCategory === 'Menu' && <Menu />}
