@@ -25,23 +25,28 @@ export type AllergenType =
 export type FoodItemType = {
   country: CountryType
   type: CategoryType
-  name: String
-  description: String
+  name: string
+  description: string
   price: number
   diet: DietType[]
   allergens: AllergenType[]
-  id: String
+  id: string
 }
 
-export type CartItem = {
-  id: string
-  item: {
-    // id: String
-    quantity: number
-    // price: number
-    modifications: String
-  }
+export type CartItem = FoodItemType & {
+  quantity: number
+  modifications?: string
 }
+// export type CartItem = {
+//   id: string
+//   name: string
+//   price: number
+
+//     // id: String
+//     quantity: number
+//     // price: number
+//     modifications?: String
+// }
 
 export type OrderType = CartItem[]
 // [key: string]: {
@@ -53,7 +58,9 @@ export type OrderType = CartItem[]
 //   }[]
 // }
 
-export type CartType = OrderType[]
+export type CartType = {
+  [key: string]: CartItem[]
+}
 
 export type ReservationStatus = 'showed' | 'reschedule' | 'noshow'
 
@@ -61,20 +68,20 @@ export type ReservationType = {
   date: Date
   partySize: number
   status: ReservationStatus
-  instructions: String
+  instructions: string
 }
 
 export type UserType = {
-  name: String
-  favourites: String[]
-  email: String
+  name: string
+  favourites: string[]
+  email: string
   purchaseHistory: OrderType[]
   reservations: ReservationType[]
 }
 
 export type MenuType = {
   [category in CategoryType]: {
-    description: String
+    description: string
     foodItems: FoodItemType[]
   }
 }

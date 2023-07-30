@@ -1,6 +1,6 @@
 import { get, set } from 'idb-keyval'
 import { useEffect, useState } from 'react'
-import { MenuType } from '../../types'
+import { CartItem, MenuType } from '../../types'
 import Image from 'next/image'
 import { OrderType } from '../../types'
 import AbsoluteCart from '@/components/AbsoluteCart'
@@ -186,6 +186,7 @@ const Menu = () => {
   const [itemNos, setItemNos] = useState<Record<string, number>>({})
   const [selectedMenuNumberItems, setSelectedMenuNumberItems] = useState(1)
 
+  const totalCartItems = useSelector(getTotalCartItems)
   const addToCartToo = useSelector(actions.addToCart)
   const addToCartOne = useSelector(addToCart)
   const dispatch = useDispatch()
@@ -207,10 +208,6 @@ const Menu = () => {
   // console.log(window.screen)
   //   }, 500)
   // }, [categoriesToggled, countriesToggled, allergensToggled])
-
-  setTimeout(() => {
-    console.log(itemNos)
-  }, 2000)
 
   // 100ms scrolling debounce to reduce unnecessary callbacks
   let scrollTimerID: NodeJS.Timer
@@ -335,18 +332,22 @@ const Menu = () => {
           </button>
         )}
 
-        {/* End of Search Filters */}
-
-        {/* Actual menu */}
         <div className="h-full w-full ">
           <div
             className={`
                  mt-2 flex w-full flex-wrap justify-center  `}
           >
-            {data.items.map((foodItem, index) => {
+            {data.items.map((foodIn, index) => {
+              const foodItem = foodIn as CartItem
               return (
                 <div
-                  className={`group relative z-0 flex w-full items-center justify-between gap-1 overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all duration-75 hover:z-50  hover:cursor-pointer hover:shadow-2xl hover:outline hover:outline-4 md:aspect-square md:w-[45%] md:flex-col md:hover:scale-105  md:hover:p-1 lg:w-[33%] xl:w-[24%]`}
+                  className={`${
+                    // Dirty hack to fix the last item always appearing a few pixels higher than expected
+                    // index === data.items.length - 1 && ' border-2 border-dashed border-secondary outline-0 '
+                    index === data.items.length - 1
+                      ? '  mt-[1.5px] w-full -translate-x-[1px] outline-dashed outline-2 outline-secondary md:w-[45%] lg:w-[32.7%] xl:w-[24%]'
+                      : 'w-full md:w-[45%] lg:w-[33%] xl:w-[24%]'
+                  } group relative flex items-center justify-between gap-1 overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all duration-75 hover:z-50  hover:cursor-pointer hover:shadow-2xl hover:outline hover:outline-4 md:aspect-square md:flex-col md:hover:scale-105  md:hover:p-1 `}
                   onMouseEnter={() => {
                     setSelectedItemID(foodItem.id)
                     const currItems = itemNos[foodItem.id]
@@ -397,44 +398,30 @@ const Menu = () => {
                           <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
                         </abbr>
                         <div className="flex pb-2">
-                          <div className="flex items-center justify-center gap-2 rounded-lg bg-white p-2">
+                          <div className="group flex items-center justify-center gap-2 rounded-lg bg-white p-2 transition-colors duration-150 ">
                             <button
-                              // onClick={() => alert(`${itemNos[foodItem.id] ?? 1} orders of: ${foodItem.name}`)}
-
                               onClick={() => {
-                                // setItemNos({ ...itemNos, [foodItem.id]: selectedMenuNumberItems })
-                                alert('hit')
                                 dispatch(
                                   addToCart({
-                                    id: foodItem.id,
-                                    item: {
-                                      quantity: selectedMenuNumberItems,
-                                      modifications: '',
-                                    },
+                                    ...foodItem,
+                                    quantity: selectedMenuNumberItems,
+                                    modifications: 'empty',
                                   })
                                 )
-                                // alert(`${selectedMenuNumberItems} orders of: ${foodItem.name}`)
                               }}
+                              className="h-full w-full active:bg-secondary active:text-primary"
                             >
                               ✓
                             </button>
                             <button
                               onClick={() => {
-                                // ! you were here
-                                // itemNos[foodItem.id] > 1 && setItemNos(prev => {...prev, itemNos[foodItem.id] - 1});
-                                // const newItemNos = {...itemNos, foodItem.id: 2};
-                                // ;(itemNos[foodItem.id] ?? 1) > 1 && setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] - 1 })
                                 selectedMenuNumberItems > 1 && setSelectedMenuNumberItems((prev) => prev - 1)
                               }}
                             >
                               -
                             </button>
                             <div>{selectedMenuNumberItems} </div>
-                            <button
-                              // onClick={() => setItemNos({ ...itemNos, [foodItem.id]: itemNos[foodItem.id] ?? 1 + 1 })}
-                              className=" hover:bg-slate-200"
-                              onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}
-                            >
+                            <button className=" hover:bg-slate-200" onClick={() => setSelectedMenuNumberItems((prev) => prev + 1)}>
                               +
                             </button>
                           </div>
@@ -442,14 +429,12 @@ const Menu = () => {
                       </div>
                     )}
 
-                    {/* </div> */}
-
                     <Image alt={`Image of ${foodItem.name}`} fill objectFit="cover" src={`/images/${foodItem.id}-0.png`} />
                   </div>
                   <div className="flex w-full flex-col ">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-xl font-semibold">
-                        <div className="group-hover: line-clamp-1 truncate">{foodItem.name}</div>
+                        <div className=" line-clamp-1 truncate">{foodItem.name}</div>
 
                         <div className="flex max-w-[60%] pl-2 font-mono text-base">
                           {foodItem.allergens?.map((allergen) => (
@@ -461,7 +446,7 @@ const Menu = () => {
                       </div>
                       <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
                     </div>
-                    <div className="line-clamp-2 text-sm tracking-wide md:group-hover:line-clamp-none md:group-hover:text-xs">{foodItem.description}</div>
+                    <div className="line-clamp-2 text-sm tracking-wide  md:group-hover:text-xs">{foodItem.description}</div>
                   </div>
                 </div>
               )

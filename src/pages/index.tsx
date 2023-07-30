@@ -9,6 +9,7 @@ import Cart from './Cart'
 import Reservations from './Reservations'
 import Menu from './Menu'
 import Specials from './Specials'
+import { useDispatch } from 'react-redux'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -52,7 +53,7 @@ type OpenStatuses = 'Open' | 'Closing Soon' | 'Closed'
 const Header = () => {
   // get actual data using getServerSideProps / getStaticProps ofc
   const data = restaurantDetails
-  const [date, setDate] = useState<Date>()
+  const [date, setDate] = useState<Date>(new Date())
 
   useEffect(() => {
     const today = new Date()
@@ -75,7 +76,7 @@ const Header = () => {
       </div>
       <div className="flex w-1/3 flex-col items-end justify-end gap-2">
         <div className="font-semibold">Today's Hours:</div>
-        {date?.getDay() &&
+        {date?.getDay() >= 0 &&
           dateSplicer(data.schedule[date?.getDay()]).map((dateFrame) => {
             return <div className="text-lg tracking-wide">{dateFrame}</div>
           })}
@@ -91,7 +92,7 @@ const Body = () => {
   const [selectedCategory, setSelectedCategory] = useState<NavCategories>('Menu')
   return (
     <div className=" w-full bg-primary text-secondary scrollbar-hide">
-      <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} categories={categories} />
+      {/* <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} categories={categories} /> */}
       {selectedCategory === 'Cart' && <Cart />}
       {selectedCategory === 'Menu' && <Menu />}
       {selectedCategory === 'Reservations' && <Reservations />}
