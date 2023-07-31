@@ -74,7 +74,7 @@ const AbsoluteCart = () => {
       onClick={() => dispatch(toggleCart())}
     >
       <div className="min-w-[300px] p-4">
-        <div className="py-2 text-4xl font-black">Order:</div>
+        <div className="py-2 text-4xl font-black underline underline-offset-8">Order:</div>
         {Object.entries(foodItems).map((category, index) => {
           const [categoryName, categoryValue] = category
           return (
@@ -103,10 +103,11 @@ const AbsoluteCart = () => {
         <div className="">{(total * 0.13).toFixed(2)}</div>
       </div>
 
-      <div className="flex justify-between px-3 pb-6 text-2xl font-black">
+      <div className="flex justify-between px-3 pb-2 text-2xl font-black">
         <div className="">Total:</div>
         <div className="">{Number(total + total * 0.13).toFixed(2)}</div>
       </div>
+      <button className={`${total > 0 ? 'visible' : 'invisible'} `}>Checkout </button>
       {/* <div className="border-b-2 border-secondary">Total:</div> */}
     </div>
   )

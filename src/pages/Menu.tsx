@@ -404,7 +404,7 @@ const Menu = () => {
                                   <Image width={35} height={35} alt={allergen} src={`/icons/${allergen}.svg`} />
                                 </abbr>
                               ))}
-                            </div>
+                            </divc>
                           </div>
                           <div className="text-xl font-bold tracking-tighter">{foodItem.price}</div>
                         </div>

@@ -74,38 +74,9 @@
     }
   },
   "categories": ["Appetizer", "Main", "Drink", "Dessert"],
-  "countries": [
-    "Philippines",
-    "Myanmar",
-    "Malaysia",
-    "Indonesia",
-    "Singapore",
-    "Thailand",
-    "Vietnam",
-    "East Timor",
-    "Brunei",
-    "Laos",
-    "Cambodia"
-  ],
+  "countries": ["Philippines", "Myanmar", "Malaysia", "Indonesia", "Singapore", "Thailand", "Vietnam", "East Timor", "Brunei", "Laos", "Cambodia"],
   "diets": ["Vegetarian", "Vegan", "Pescatarian", "Gluten-Free", "Nuts"],
-  "allergens": [
-    "Peanuts",
-    "Crustaceans",
-    "Soy",
-    "Wheat",
-    "Fish",
-    "Coconut",
-    "Eggs",
-    "Nuts",
-    "Shellfish",
-    "Dairy",
-    "Pork",
-    "Seafood",
-    "Shrimp",
-    "Mollusks",
-    "Sesame",
-    "Poultry"
-  ],
+  "allergens": ["Peanuts", "Crustaceans", "Soy", "Wheat", "Fish", "Coconut", "Eggs", "Nuts", "Shellfish", "Dairy", "Pork", "Seafood", "Shrimp", "Mollusks", "Sesame", "Poultry"],
   "items": [
     {
       "country": "Indonesia",

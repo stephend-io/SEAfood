@@ -1,0 +1,2840 @@
+[
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Gado-Gado",
+    "description": "A salad made with mixed vegetables, tofu, and hard-boiled eggs, topped with peanut sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "IDN0"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Lumpia Semarang",
+    "description": "Crispy spring rolls filled with bamboo shoots, shrimp, and chicken, served with a sweet and sour dipping sauce.",
+    "price": 8.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Soy", "Wheat"],
+    "id": "IDN1"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Sate Ayam",
+    "description": "Grilled chicken skewers marinated in a fragrant blend of spices, served with peanut sauce.",
+    "price": 9.99,
+    "allergens": ["Peanuts"],
+    "id": "IDN2"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Siomay",
+    "description": "Steamed fish and shrimp dumplings served with a spicy peanut sauce and sweet soy sauce.",
+    "price": 7.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish", "Soy", "Peanuts", "Wheat"],
+    "id": "IDN3"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Martabak",
+    "description": "A savory stuffed pancake filled with minced meat, vegetables, and spices.",
+    "price": 10.99,
+    "allergens": ["Wheat", "Soy"],
+    "id": "IDN4"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Otak-Otak",
+    "description": "Grilled fish cake made from ground fish mixed with spices and wrapped in banana leaves.",
+    "price": 7.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish", "Coconut"],
+    "id": "IDN5"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Perkedel Kentang",
+    "description": "Fried potato cakes made with mashed potatoes, onions, and spices.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN6"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Bakwan Jagung",
+    "description": "Crispy corn fritters made with sweet corn kernels, flour, and spices.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "IDN7"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Pempek",
+    "description": "Fishcake made from ground fish and tapioca flour, served with a tangy vinegar-based sauce.",
+    "price": 8.99,
+    "diet": ["Pescatarian", "Gluten-Free"],
+    "allergens": ["Fish"],
+    "id": "IDN8"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Appetizer",
+    "name": "Rujak",
+    "description": "A mixed fruit salad with a spicy tamarind dressing, often garnished with peanuts and fried shallots.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "IDN9"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Nasi Goreng",
+    "description": "Indonesian-style fried rice cooked with a combination of meats, vegetables, and spices, usually served with a fried egg on top.",
+    "price": 12.99,
+    "id": "IDN10"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Rendang",
+    "description": "A flavorful and spicy slow-cooked beef dish in a rich coconut-based sauce.",
+    "price": 15.99,
+    "allergens": ["Coconut"],
+    "id": "IDN11"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Sate Ayam",
+    "description": "Grilled chicken skewers marinated in a fragrant blend of spices, served with peanut sauce and rice cakes.",
+    "price": 14.99,
+    "allergens": ["Peanuts"],
+    "id": "IDN12"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Gado-Gado",
+    "description": "A popular Indonesian salad made with a mix of vegetables, tofu, and hard-boiled eggs, dressed with peanut sauce.",
+    "price": 10.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "IDN13"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Nasi Rawon",
+    "description": "A black beef soup with a rich and aromatic broth, made from black nuts (buah keluak) and served with rice.",
+    "price": 13.99,
+    "id": "IDN14"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Soto Ayam",
+    "description": "A comforting chicken soup made with turmeric-infused broth, shredded chicken, and rice noodles.",
+    "price": 11.99,
+    "id": "IDN15"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Ayam Goreng",
+    "description": "Crispy fried chicken marinated in a blend of spices, served with sambal (chili sauce) and rice.",
+    "price": 12.99,
+    "id": "IDN16"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Sambal Udang",
+    "description": "Spicy stir-fried shrimp cooked in a flavorful chili paste, served with steamed rice.",
+    "price": 16.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans"],
+    "id": "IDN17"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Pepes Ikan",
+    "description": "Fish fillets marinated in a spicy paste, wrapped in banana leaves, and steamed to perfection.",
+    "price": 14.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish", "Coconut"],
+    "id": "IDN18"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Main",
+    "name": "Sayur Lodeh",
+    "description": "A coconut milk-based vegetable curry with a mix of vegetables, tofu, and tempeh.",
+    "price": 11.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Soy", "Coconut"],
+    "id": "IDN19"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Drink",
+    "name": "Es Teh Manis",
+    "description": "Sweet iced tea, often served with a squeeze of fresh lime.",
+    "price": 3.99,
+    "id": "IDN20"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Drink",
+    "name": "Es Campur",
+    "description": "A refreshing mixed dessert drink with shaved ice, assorted fruits, jellies, and sweet syrups.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN21"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Drink",
+    "name": "Es Jeruk",
+    "description": "Cold orange juice made from fresh oranges, served with ice.",
+    "price": 4.99,
+    "id": "IDN22"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Drink",
+    "name": "Kopi Tubruk",
+    "description": "Traditional Indonesian-style coffee brewed with coarse coffee grounds and served in a cup.",
+    "price": 4.99,
+    "id": "IDN23"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Drink",
+    "name": "Es Cendol",
+    "description": "A sweet and creamy dessert drink made with pandan-flavored rice jelly, coconut milk, and palm sugar syrup.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN24"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Dessert",
+    "name": "Pisang Goreng",
+    "description": "Crispy fried bananas, served hot and sprinkled with powdered sugar.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN25"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Dessert",
+    "name": "Klepon",
+    "description": "Sweet glutinous rice balls filled with palm sugar, coated with grated coconut.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN26"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Dessert",
+    "name": "Kue Lapis",
+    "description": "Layered colorful steamed cake made from rice flour, coconut milk, and pandan flavoring.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN27"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Dessert",
+    "name": "Es Teler",
+    "description": "A refreshing dessert made with a mix of fruits, coconut, avocado, and condensed milk, served with crushed ice.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "id": "IDN28"
+  },
+  {
+    "country": "Indonesia",
+    "type": "Dessert",
+    "name": "Bubur Ketan Hitam",
+    "description": "A warm black sticky rice pudding with coconut milk and palm sugar syrup.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "IDN29"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Satay",
+    "description": "Skewered and grilled meat (chicken, beef, or mutton) served with a peanut sauce dip.",
+    "price": 9.99,
+    "allergens": ["Peanuts"],
+    "id": "SGP0"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Popiah",
+    "description": "Fresh spring rolls filled with vegetables, tofu, and shrimp, served with a sweet sauce.",
+    "price": 8.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Soy", "Wheat"],
+    "id": "SGP1"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Laksa",
+    "description": "A spicy coconut-based noodle soup with shrimp, fish cakes, tofu, and bean sprouts.",
+    "price": 10.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Fish", "Soy", "Wheat"],
+    "id": "SGP2"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Hainanese Chicken Rice",
+    "description": "Poached chicken served with fragrant rice cooked in chicken broth, accompanied by chili sauce and soy sauce.",
+    "price": 12.99,
+    "allergens": ["Soy"],
+    "id": "SGP3"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Otak-Otak",
+    "description": "Spiced fish paste grilled in a banana leaf, creating a smoky and aromatic appetizer.",
+    "price": 7.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish", "Coconut"],
+    "id": "SGP4"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Rojak",
+    "description": "A salad of mixed fruits and vegetables dressed in a tangy and spicy shrimp paste sauce.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Crustaceans"],
+    "id": "SGP5"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Fried Carrot Cake",
+    "description": "Stir-fried radish cake with eggs, preserved radish, and soy sauce, served in a savory omelette-style dish.",
+    "price": 8.99,
+    "allergens": ["Soy", "Wheat"],
+    "id": "SGP6"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Roti Prata",
+    "description": "Flaky and crispy Indian flatbread served with a side of curry for dipping.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP7"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Gyoza",
+    "description": "Pan-fried dumplings filled with minced meat and vegetables, served with a dipping sauce.",
+    "price": 8.99,
+    "allergens": ["Wheat", "Soy"],
+    "id": "SGP8"
+  },
+  {
+    "country": "Singapore",
+    "type": "Appetizer",
+    "name": "Satay Bee Hoon",
+    "description": "Rice vermicelli noodles topped with satay sauce, sliced cucumber, bean sprouts, and tofu.",
+    "price": 9.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts", "Soy", "Wheat"],
+    "id": "SGP9"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Hainanese Chicken Rice",
+    "description": "A beloved Singaporean dish featuring poached chicken served with fragrant rice cooked in chicken broth.",
+    "price": 12.99,
+    "id": "SGP10"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Chili Crab",
+    "description": "Crab cooked in a tangy and spicy tomato-based sauce, best enjoyed with steamed buns.",
+    "price": 25.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Soy", "Wheat"],
+    "id": "SGP11"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Char Kway Teow",
+    "description": "Stir-fried rice noodles with shrimp, Chinese sausage, bean sprouts, eggs, and soy sauce.",
+    "price": 11.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Soy", "Wheat"],
+    "id": "SGP12"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Chicken Satay with Peanut Sauce",
+    "description": "Skewered and grilled chicken served with a rich and savory peanut sauce.",
+    "price": 14.99,
+    "allergens": ["Peanuts"],
+    "id": "SGP13"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Murtabak",
+    "description": "A savory stuffed pancake filled with minced meat, onions, and spices, served with curry sauce.",
+    "price": 10.99,
+    "allergens": ["Wheat", "Soy"],
+    "id": "SGP14"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Nasi Lemak",
+    "description": "Fragrant coconut rice served with fried chicken, sambal, cucumber, fried anchovies, and peanuts.",
+    "price": 13.99,
+    "allergens": ["Fish", "Peanuts", "Soy"],
+    "id": "SGP15"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Bak Kut Teh",
+    "description": "A flavorful pork rib soup simmered with herbs and spices, often enjoyed with rice or fried dough fritters.",
+    "price": 15.99,
+    "id": "SGP16"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Laksa",
+    "description": "A spicy noodle soup with coconut-based broth, shrimp, fish cakes, tofu, and bean sprouts.",
+    "price": 12.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Fish", "Soy", "Wheat"],
+    "id": "SGP17"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Beef Rendang",
+    "description": "Tender beef slow-cooked in a rich and aromatic coconut-based sauce, served with steamed rice.",
+    "price": 16.99,
+    "allergens": ["Coconut"],
+    "id": "SGP18"
+  },
+  {
+    "country": "Singapore",
+    "type": "Main",
+    "name": "Mee Goreng",
+    "description": "Stir-fried noodles with shrimp, chicken, vegetables, and a flavorful sweet and spicy sauce.",
+    "price": 11.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Soy", "Wheat"],
+    "id": "SGP19"
+  },
+  {
+    "country": "Singapore",
+    "type": "Drink",
+    "name": "Teh Tarik",
+    "description": "Frothy and creamy pulled tea made by pouring the tea back and forth between two containers.",
+    "price": 3.99,
+    "id": "SGP20"
+  },
+  {
+    "country": "Singapore",
+    "type": "Drink",
+    "name": "Bandung",
+    "description": "A refreshing drink made with rose syrup, milk, and a hint of evaporated milk.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "id": "SGP21"
+  },
+  {
+    "country": "Singapore",
+    "type": "Drink",
+    "name": "Milo Dinosaur",
+    "description": "Iced Milo beverage topped with an extra heap of Milo powder for added chocolatey goodness.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "id": "SGP22"
+  },
+  {
+    "country": "Singapore",
+    "type": "Drink",
+    "name": "Kopi-O",
+    "description": "Traditional black coffee brewed with a robust blend of coffee beans, served with sugar or condensed milk.",
+    "price": 4.99,
+    "id": "SGP23"
+  },
+  {
+    "country": "Singapore",
+    "type": "Drink",
+    "name": "Calamansi Juice",
+    "description": "A tangy and refreshing citrus drink made from calamansi limes, sugar, and water.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP24"
+  },
+  {
+    "country": "Singapore",
+    "type": "Dessert",
+    "name": "Ice Kachang",
+    "description": "A colorful dessert of shaved ice topped with various sweet ingredients like red beans, jellies, and syrups.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP25"
+  },
+  {
+    "country": "Singapore",
+    "type": "Dessert",
+    "name": "Chendol",
+    "description": "A sweet dessert made with green jelly noodles, coconut milk, palm sugar syrup, and red beans.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP26"
+  },
+  {
+    "country": "Singapore",
+    "type": "Dessert",
+    "name": "Bubur Cha Cha",
+    "description": "A warm dessert of yam and sweet potato cubes in a coconut milk-based broth, sweetened with palm sugar.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP27"
+  },
+  {
+    "country": "Singapore",
+    "type": "Dessert",
+    "name": "Durian Pengat",
+    "description": "A creamy and rich durian dessert made from pureed durian flesh, coconut milk, and palm sugar.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP28"
+  },
+  {
+    "country": "Singapore",
+    "type": "Dessert",
+    "description": "A warm black glutinous rice dessert cooked with coconut milk and palm sugar, topped with coconut cream.",
+    "name": "Pulut Hitam",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "SGP29"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Tom Yum Goong",
+    "description": "Spicy and sour shrimp soup with lemongrass, lime leaves, galangal, and chili.",
+    "price": 9.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans"],
+    "id": "THA0"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Satay",
+    "description": "Grilled skewers of marinated meat (chicken, beef, or pork) served with peanut sauce.",
+    "price": 8.99,
+    "allergens": ["Peanuts"],
+    "id": "THA1"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Som Tam",
+    "description": "Spicy green papaya salad with tomatoes, green beans, peanuts, and a tangy lime dressing.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "THA2"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Thai Fish Cakes (Tod Mun Pla)",
+    "description": "Deep-fried fish cakes made with minced fish, red curry paste, and herbs, served with sweet chili sauce.",
+    "price": 7.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish", "Eggs"],
+    "id": "THA3"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Chicken Satay (Satay Gai)",
+    "description": "Grilled chicken skewers marinated in a flavorful blend of spices, served with peanut sauce.",
+    "price": 8.99,
+    "allergens": ["Peanuts"],
+    "id": "THA4"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Miang Kham",
+    "description": "A traditional Thai snack of betel leaves filled with various toppings like roasted coconut, peanuts, lime, ginger, and shrimp, served with a sweet and tangy sauce.",
+    "price": 6.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Peanuts", "Soy"],
+    "id": "THA5"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Poh Pia Tod",
+    "description": "Crispy spring rolls filled with vegetables, glass noodles, and tofu, served with a sweet chili sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Soy", "Wheat"],
+    "id": "THA6"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Yum Woon Sen",
+    "description": "A refreshing glass noodle salad with minced pork, shrimp, tomatoes, onions, and a spicy lime dressing.",
+    "price": 8.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans"],
+    "id": "THA7"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Khao Tang Na Tang",
+    "description": "Crispy rice crackers served with a flavorful minced pork and shrimp dip.",
+    "price": 6.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans"],
+    "id": "THA8"
+  },
+  {
+    "country": "Thailand",
+    "type": "Appetizer",
+    "name": "Tod Man Pla",
+    "description": "Thai-style fish cakes made with minced fish, red curry paste, green beans, and kaffir lime leaves, deep-fried until golden brown.",
+    "price": 7.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "THA9"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Pad Thai",
+    "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts, flavored with tamarind sauce.",
+    "price": 12.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Peanuts"],
+    "id": "THA10"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Green Curry (Gaeng Keow Wan)",
+    "description": "A spicy and aromatic green curry made with coconut milk, green chili paste, meat (chicken, beef, or shrimp), and Thai basil.",
+    "price": 14.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Fish"],
+    "id": "THA11"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Massaman Curry",
+    "description": "A rich and flavorful curry with tender meat (beef, chicken, or lamb), potatoes, onions, and roasted peanuts.",
+    "price": 15.99,
+    "allergens": ["Peanuts"],
+    "id": "THA12"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Tom Kha Gai",
+    "description": "A creamy and fragrant chicken soup with coconut milk, galangal, lemongrass, and mushrooms.",
+    "price": 11.99,
+    "id": "THA13"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Pad See Ew",
+    "description": "Stir-fried flat rice noodles with meat (chicken, beef, or pork), Chinese broccoli, egg, and soy sauce.",
+    "price": 13.99,
+    "allergens": ["Soy", "Wheat"],
+    "id": "THA14"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Panang Curry",
+    "description": "A creamy and mildly spicy curry with a rich peanut flavor, made with meat (chicken, beef, or pork) and kaffir lime leaves.",
+    "price": 14.99,
+    "allergens": ["Peanuts"],
+    "id": "THA15"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Pineapple Fried Rice",
+    "description": "Fried rice with pineapple, shrimp, chicken, cashew nuts, raisins, and curry powder, served in a pineapple shell.",
+    "price": 12.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Crustaceans", "Nuts"],
+    "id": "THA16"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Gaeng Ped",
+    "description": "A spicy red curry made with coconut milk, red chili paste, meat (duck, chicken, or beef), bamboo shoots, and Thai basil.",
+    "price": 14.99,
+    "id": "THA17"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Pad Kra Pao",
+    "description": "Stir-fried meat (chicken, beef, or pork) with Thai holy basil, chili, garlic, and soy sauce, served with rice and a fried egg.",
+    "price": 13.99,
+    "id": "THA18"
+  },
+  {
+    "country": "Thailand",
+    "type": "Main",
+    "name": "Khao Soi",
+    "description": "A Northern Thai specialty featuring egg noodles in a rich and fragrant curry broth, topped with crispy noodles, meat (chicken or beef), and pickled mustard greens.",
+    "price": 15.99,
+    "id": "THA19"
+  },
+  {
+    "country": "Thailand",
+    "type": "Drink",
+    "name": "Thai Iced Tea",
+    "description": "A sweet and creamy iced tea made with strong black tea, condensed milk, and evaporated milk.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "id": "THA20"
+  },
+  {
+    "country": "Thailand",
+    "type": "Drink",
+    "name": "Thai Iced Coffee",
+    "description": "A refreshing iced coffee with a hint of sweetness, made with dark roasted coffee, condensed milk, and ice.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "id": "THA21"
+  },
+  {
+    "country": "Thailand",
+    "type": "Drink",
+    "name": "Fresh Coconut Water",
+    "description": "Chilled and refreshing coconut water served straight from the coconut.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA22"
+  },
+  {
+    "country": "Thailand",
+    "type": "Drink",
+    "name": "Mango Sticky Rice Smoothie",
+    "description": "A tropical smoothie made with ripe mangoes, coconut milk, and sticky rice, blended into a creamy delight.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA23"
+  },
+  {
+    "country": "Thailand",
+    "type": "Drink",
+    "name": "Pandan Juice",
+    "description": "A fragrant and refreshing drink made from pandan leaves, often served with a squeeze of lime.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA24"
+  },
+  {
+    "country": "Thailand",
+    "type": "Dessert",
+    "name": "Mango Sticky Rice",
+    "description": "A classic Thai dessert consisting of ripe mango slices served with sweet glutinous rice and coconut sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA25"
+  },
+  {
+    "country": "Thailand",
+    "type": "Dessert",
+    "name": "Tub Tim Krob",
+    "description": "A delightful dessert of crunchy water chestnuts coated in colored tapioca flour, served in sweet coconut milk.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA26"
+  },
+  {
+    "country": "Thailand",
+    "type": "Dessert",
+    "name": "Coconut Ice Cream",
+    "description": "Creamy and refreshing coconut milk-based ice cream, served in a coconut shell with various toppings.",
+    "price": 5.99,
+    "diet": ["Vegetarian"],
+    "id": "THA27"
+  },
+  {
+    "country": "Thailand",
+    "type": "Dessert",
+    "name": "Khanom Buang",
+    "description": "Crispy Thai-style crepes filled with sweet and savory fillings like meringue, coconut cream, and shredded coconut.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "THA28"
+  },
+  {
+    "country": "Thailand",
+    "type": "Dessert",
+    "name": "Thai Banana Fritters (Goreng Pisang)",
+    "description": "Sliced bananas coated in a light batter, deep-fried until golden brown, and served with a drizzle of honey.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "THA29"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Larb",
+    "description": "A traditional minced meat salad with herbs, lime juice, and toasted rice powder.",
+    "price": 8.99,
+    "id": "LAO0"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Mok Pa",
+    "description": "Steamed fish wrapped in banana leaves with herbs, spices, and coconut milk.",
+    "price": 10.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO2"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Sai Oua",
+    "description": "Grilled Lao sausages made with minced pork, lemongrass, and spices.",
+    "price": 8.99,
+    "id": "LAO3"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Mok Houm",
+    "description": "Grilled mushroom salad with fresh herbs, lime dressing, and a touch of spice.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO4"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Ping Kai",
+    "description": "Grilled marinated chicken skewers served with a spicy dipping sauce.",
+    "price": 8.99,
+    "id": "LAO5"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Nem Khao",
+    "description": "Crispy rice salad with fermented pork, peanuts, herbs, and a tangy dressing.",
+    "price": 7.99,
+    "allergens": ["Peanuts"],
+    "id": "LAO6"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Khai Paen",
+    "description": "Deep-fried riverweed seasoned with spices, served as a crunchy snack.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO7"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Or Lam",
+    "description": "Spicy stew made with a variety of vegetables, herbs, and your choice of meat (pork, beef, or fish).",
+    "price": 11.99,
+    "id": "LAO8"
+  },
+  {
+    "country": "Laos",
+    "type": "Appetizer",
+    "name": "Khao Jee",
+    "description": "Grilled Lao-style baguette with pate, herbs, and pickled vegetables.",
+    "price": 6.99,
+    "id": "LAO9"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Khao Soi",
+    "description": "A popular Lao noodle dish made with thick rice noodles, minced meat (chicken or beef), and a savory broth.",
+    "price": 12.99,
+    "id": "LAO10"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Laap",
+    "description": "A flavorful minced meat salad with herbs, spices, and lime juice, served with sticky rice.",
+    "price": 11.99,
+    "id": "LAO11"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Or Lam Mok",
+    "description": "Fish steamed in banana leaves with vegetables, herbs, and a spicy sauce.",
+    "price": 13.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO12"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Ping Pa",
+    "description": "Grilled fish marinated in herbs and spices, served with a side of sticky rice.",
+    "price": 15.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO13"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Mok Pa Ma",
+    "description": "Grilled fish wrapped in banana leaves with a zesty marinade of herbs, spices, and coconut milk.",
+    "price": 14.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO14"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Khao Piak Sen",
+    "description": "Homemade rice noodle soup with meat (chicken, pork, or beef), vegetables, and aromatic herbs.",
+    "price": 10.99,
+    "id": "LAO15"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Mok Kai",
+    "description": "Steamed chicken with lemongrass, galangal, herbs, and coconut milk, served with sticky rice.",
+    "price": 13.99,
+    "id": "LAO16"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Ping Moo",
+    "description": "Grilled marinated pork skewers served with a spicy dipping sauce and sticky rice.",
+    "price": 12.99,
+    "id": "LAO17"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Orlam Khua Pa",
+    "description": "Grilled fish marinated in a flavorful mixture of herbs, spices, and lemongrass, served with vegetables.",
+    "price": 15.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO18"
+  },
+  {
+    "country": "Laos",
+    "type": "Main",
+    "name": "Mok Pha",
+    "description": "Fish cooked in banana leaves with a fragrant mixture of herbs, spices, and coconut milk.",
+    "price": 14.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Fish"],
+    "id": "LAO19"
+  },
+  {
+    "country": "Laos",
+    "type": "Drink",
+    "name": "Beerlao",
+    "description": "A popular Lao beer known for its crisp and refreshing taste.",
+    "price": 4.99,
+    "id": "LAO20"
+  },
+  {
+    "country": "Laos",
+    "type": "Drink",
+    "name": "Lao Coffee",
+    "description": "Strong and aromatic coffee brewed in a traditional Lao style, often served with condensed milk.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "id": "LAO21"
+  },
+  {
+    "country": "Laos",
+    "type": "Drink",
+    "name": "Lemongrass Iced Tea",
+    "description": "Iced tea infused with lemongrass, offering a refreshing and citrusy flavor.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO22"
+  },
+  {
+    "country": "Laos",
+    "type": "Drink",
+    "name": "Coconut Shake",
+    "description": "A creamy and tropical shake made with fresh coconut, ice, and a hint of sweetness.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO23"
+  },
+  {
+    "country": "Laos",
+    "type": "Drink",
+    "name": "Fruit Smoothie",
+    "description": "A delightful blend of fresh seasonal fruits, ice, and a touch of sweetness, served chilled.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO24"
+  },
+  {
+    "country": "Laos",
+    "type": "Dessert",
+    "name": "Sticky Rice with Mango",
+    "description": "A classic Lao dessert featuring sticky rice paired with ripe mango slices and coconut milk.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO25"
+  },
+  {
+    "country": "Laos",
+    "type": "Dessert",
+    "name": "Khao Lam",
+    "description": "Sweet sticky rice cooked with black beans, coconut milk, and wrapped in bamboo leaves.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO26"
+  },
+  {
+    "country": "Laos",
+    "type": "Dessert",
+    "name": "Thong Yip",
+    "description": "Golden flower-shaped sweet custard made from egg yolks and sugar, often served on special occasions.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Eggs"],
+    "id": "LAO27"
+  },
+  {
+    "country": "Laos",
+    "type": "Dessert",
+    "name": "Nam Varn",
+    "description": "A refreshing dessert of mixed fruits and jelly served in a sweet syrup, topped with crushed ice.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO28"
+  },
+  {
+    "country": "Laos",
+    "type": "Dessert",
+    "name": "Khanom Kok",
+    "description": "Small coconut pancakes with a soft center and crispy edges, often flavored with pandan or coconut.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "LAO29"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Ambuyat",
+    "description": "A traditional Bruneian dish made from the interior trunk of the sago palm, served with various dipping sauces.",
+    "price": 10.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN0"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Soto Brunei",
+    "description": "A fragrant and flavorful soup made with chicken or beef, spices, herbs, and noodles.",
+    "price": 8.99,
+    "id": "BRN1"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Penyaram",
+    "description": "Small, fluffy pancakes made with fermented rice batter, often served with coconut jam.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "BRN2"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Sambal Lada Hitam",
+    "description": "Black pepper beef stir-fry with aromatic spices and a spicy sambal sauce.",
+    "price": 12.99,
+    "id": "BRN3"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Kerabu Mangga",
+    "description": "A refreshing mango salad with shredded green mango, herbs, peanuts, and a tangy dressing.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "BRN4"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Rendang Daging",
+    "description": "Tender beef slow-cooked in a rich and aromatic blend of spices, coconut milk, and herbs.",
+    "price": 14.99,
+    "id": "BRN5"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Kembayau Salad",
+    "description": "A unique salad made with kembayau fruit, cucumber, onion, and a zesty dressing.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN6"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Prawn Rolls (Lor Bak)",
+    "description": "Deep-fried prawn rolls wrapped in bean curd skin, served with a sweet chili sauce.",
+    "price": 9.99,
+    "id": "BRN7"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Ambal",
+    "description": "Pickled vegetables with a tangy and spicy flavor, commonly served as a condiment or side dish.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN8"
+  },
+  {
+    "country": "Brunei",
+    "type": "Appetizer",
+    "name": "Ketupat",
+    "description": "Compressed rice cakes wrapped in woven palm leaves, often served with savory dishes.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN9"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Nasi Katok",
+    "description": "A popular Bruneian dish consisting of steamed rice, fried chicken, and a spicy sambal sauce.",
+    "price": 9.99,
+    "id": "BRN10"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Gadong Fried Kway Teow",
+    "description": "Stir-fried flat rice noodles with shrimp, bean sprouts, chives, and a savory soy-based sauce.",
+    "price": 12.99,
+    "diet": ["Pescatarian"],
+    "allergens": ["Shellfish"],
+    "id": "BRN11"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Nasi Lemak",
+    "description": "Fragrant coconut rice served with fried chicken, sambal, hard-boiled egg, cucumber, and peanuts.",
+    "price": 11.99,
+    "id": "BRN12"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Ambuyat Sambal",
+    "description": "Sago starch served with a spicy sambal sauce and various side dishes, such as grilled fish or vegetables.",
+    "price": 13.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN13"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Ayam Pansuh",
+    "description": "Chicken cooked in bamboo with lemongrass, ginger, and other aromatic herbs, imparting a unique flavor.",
+    "price": 14.99,
+    "id": "BRN14"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Satar",
+    "description": "Grilled fish cake wrapped in banana leaves, seasoned with spices and coconut milk.",
+    "price": 10.99,
+    "id": "BRN15"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Soto Mee",
+    "description": "Noodle soup with shredded chicken, bean sprouts, herbs, and a flavorful broth.",
+    "price": 10.99,
+    "id": "BRN16"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Belutak Beef",
+    "description": "Slow-cooked beef in a savory and aromatic gravy, often served with rice or flatbread.",
+    "price": 13.99,
+    "id": "BRN17"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Ikan Bakar",
+    "description": "Grilled fish marinated in a spicy sauce, served with steamed rice and a side of sambal.",
+    "price": 15.99,
+    "id": "BRN18"
+  },
+  {
+    "country": "Brunei",
+    "type": "Main",
+    "name": "Laksam",
+    "description": "Flat rice noodle rolls served in a creamy and flavorful fish-based gravy, topped with shredded herbs.",
+    "price": 12.99,
+    "allergens": ["Fish"],
+    "id": "BRN19"
+  },
+  {
+    "country": "Brunei",
+    "type": "Drink",
+    "name": "Teh Tarik",
+    "description": "A popular hot milk tea made by \"pulling\"the tea back and forth to create a frothy texture.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "id": "BRN20"
+  },
+  {
+    "country": "Brunei",
+    "type": "Drink",
+    "name": "Air Sirap Limau",
+    "description": "A refreshing limeade made with fresh lime juice, sugar syrup, and iced water.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN21"
+  },
+  {
+    "country": "Brunei",
+    "type": "Drink",
+    "name": "Bandung",
+    "description": "A sweet and creamy pink milk drink made with rose syrup and condensed milk.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "BRN22"
+  },
+  {
+    "country": "Brunei",
+    "type": "Drink",
+    "name": "Iced Kopi-O",
+    "description": "A strong black coffee served over ice, commonly enjoyed with sweetened condensed milk.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "BRN23"
+  },
+  {
+    "country": "Brunei",
+    "type": "Drink",
+    "name": "Coconut Water",
+    "description": "Fresh and chilled coconut water served straight from the coconut.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN24"
+  },
+  {
+    "country": "Brunei",
+    "type": "Dessert",
+    "name": "Kuih Lapis",
+    "description": "Layered steamed cake made with pandan, coconut, and rice flour, often served as a sweet treat.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN25"
+  },
+  {
+    "country": "Brunei",
+    "type": "Dessert",
+    "name": "Kek Batik",
+    "description": "No-bake chocolate biscuit cake made with condensed milk, cocoa powder, and biscuits.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "BRN26"
+  },
+  {
+    "country": "Brunei",
+    "type": "Dessert",
+    "name": "Pengat Pisang",
+    "description": "A sweet and creamy dessert made with bananas, coconut milk, palm sugar, and fragrant pandan.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN27"
+  },
+  {
+    "country": "Brunei",
+    "type": "Dessert",
+    "name": "Bingka Ambuyat",
+    "description": "Baked cassava cake with a soft and moist texture, often enjoyed with a cup of hot tea.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN28"
+  },
+  {
+    "country": "Brunei",
+    "type": "Dessert",
+    "name": "Cendol",
+    "description": "A popular shaved ice dessert with green rice flour jelly, coconut milk, palm sugar, and red beans.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "BRN29"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Ikan Sabuko",
+    "description": "Grilled marinated fish served with a tangy tamarind dipping sauce.",
+    "price": 10.99,
+    "allergens": ["Fish"],
+    "id": "TLS0"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Tukir",
+    "description": "Fried banana fritters served with a sweet palm sugar sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS1"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Croquete de Frango",
+    "description": "Deep-fried chicken croquettes with a crispy outer crust.",
+    "price": 8.99,
+    "id": "TLS2"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Tukir Asin",
+    "description": "Savory fried banana fritters sprinkled with salt, giving them a unique flavor.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS3"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Bebek Goreng",
+    "description": "Crispy fried duck served with a side of sambal and steamed rice.",
+    "price": 14.99,
+    "id": "TLS4"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Dadar Timor",
+    "description": "Savory pancake made with rice flour and filled with a mixture of vegetables and herbs.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS5"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Tukir Manis",
+    "description": "Sweet fried banana fritters coated in a caramelized palm sugar syrup.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS6"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Rujak Timor",
+    "description": "A tangy and spicy fruit salad made with a mix of tropical fruits and a chili-based dressing.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS7"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Bolu Klau",
+    "description": "Steamed glutinous rice cakes with shredded coconut and a sprinkle of palm sugar.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS8"
+  },
+  {
+    "country": "East Timor",
+    "type": "Appetizer",
+    "name": "Sambal Terong",
+    "description": "Grilled eggplant served with a spicy chili sambal sauce.",
+    "price": 9.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS9"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Batar Da'an",
+    "description": "A traditional East Timorese stew made with corned beef, pumpkin, and a variety of spices.",
+    "price": 12.99,
+    "id": "TLS10"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Ikan Raja Leuruk",
+    "description": "Slow-cooked king mackerel in a rich coconut curry sauce, served with steamed rice.",
+    "price": 14.99,
+    "allergens": ["Fish"],
+    "id": "TLS11"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Caril de Galinha",
+    "description": "Chicken curry cooked with a fragrant blend of spices and served with steamed rice.",
+    "price": 11.99,
+    "id": "TLS12"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Batar Masin",
+    "description": "Savory corned beef cooked with spices and served with steamed rice.",
+    "price": 12.99,
+    "id": "TLS13"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Feijoada",
+    "description": "A hearty Portuguese-inspired stew made with black beans, pork, and sausages.",
+    "price": 13.99,
+    "allergens": ["Pork"],
+    "id": "TLS14"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Maize Tamales",
+    "description": "Steamed corn dumplings filled with savory meat or vegetable filling, wrapped in corn husks.",
+    "price": 10.99,
+    "id": "TLS15"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Kari Kambing",
+    "description": "Spicy lamb curry with tender meat and aromatic spices, served with steamed rice.",
+    "price": 15.99,
+    "id": "TLS16"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Manok Aninu",
+    "description": "Grilled chicken marinated in a blend of herbs and spices, served with a side of salad.",
+    "price": 13.99,
+    "id": "TLS17"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Ikan Saboko Asin",
+    "description": "Salted and dried fish grilled to perfection, served with steamed rice and vegetables.",
+    "price": 12.99,
+    "allergens": ["Fish"],
+    "id": "TLS18"
+  },
+  {
+    "country": "East Timor",
+    "type": "Main",
+    "name": "Batar Da'an Ulo",
+    "description": "A vegetarian version of Batar Da'an made with pumpkin, corn, and a medley of vegetables.",
+    "price": 11.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS19"
+  },
+  {
+    "country": "East Timor",
+    "type": "Drink",
+    "name": "Balsa",
+    "description": "A refreshing traditional East Timorese drink made from the pulp of a young coconut.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS20"
+  },
+  {
+    "country": "East Timor",
+    "type": "Drink",
+    "name": "Summoro",
+    "description": "A sweet and tangy citrus juice made from local Timorese oranges.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS21"
+  },
+  {
+    "country": "East Timor",
+    "type": "Drink",
+    "name": "Kafe Timor",
+    "description": "Strong and aromatic East Timorese coffee served black or with condensed milk.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "TLS22"
+  },
+  {
+    "country": "East Timor",
+    "type": "Drink",
+    "name": "Lafaek Baa",
+    "description": "A traditional East Timorese corn-based drink, sweetened with palm sugar.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS23"
+  },
+  {
+    "country": "East Timor",
+    "type": "Drink",
+    "name": "Hibiskus Iced Tea",
+    "description": "Iced tea infused with hibiscus flowers, offering a floral and refreshing flavor.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS24"
+  },
+  {
+    "country": "East Timor",
+    "type": "Dessert",
+    "name": "Tukir Kinari",
+    "description": "Sweet banana fritters served with a drizzle of honey or caramel sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS25"
+  },
+  {
+    "country": "East Timor",
+    "type": "Dessert",
+    "name": "Manioc Pudim",
+    "description": "A creamy and rich cassava pudding topped with coconut cream and grated coconut.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS26"
+  },
+  {
+    "country": "East Timor",
+    "type": "Dessert",
+    "name": "Bolo de Cuscuzeiro",
+    "description": "Steamed cornbread made with cornmeal, coconut milk, and a touch of sugar.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS27"
+  },
+  {
+    "country": "East Timor",
+    "type": "Dessert",
+    "name": "Susuwu",
+    "description": "A traditional East Timorese dessert made from mashed pumpkin, coconut, and palm sugar.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS28"
+  },
+  {
+    "country": "East Timor",
+    "type": "Dessert",
+    "name": "Kolak Pisang",
+    "description": "A warm dessert made with bananas, sweet potatoes, and coconut milk, flavored with pandan.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "TLS29"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Lumpiang Shanghai",
+    "description": "Crispy Filipino spring rolls filled with seasoned ground pork and vegetables.",
+    "price": 8.99,
+    "id": "PHL0"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Tokwa't Baboy",
+    "description": "Deep-fried tofu and pork belly served with a tangy soy-vinegar dipping sauce.",
+    "price": 9.99,
+    "allergens": ["Soy"],
+    "id": "PHL1"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Calamares",
+    "description": "Lightly battered and fried squid rings served with a garlic mayo dip.",
+    "price": 10.99,
+    "allergens": ["Seafood", "Wheat"],
+    "id": "PHL2"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Kinilaw",
+    "description": "A Filipino ceviche made with fresh fish or seafood marinated in vinegar, citrus juices, and spices.",
+    "price": 11.99,
+    "allergens": ["Seafood"],
+    "id": "PHL3"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Chicharon Bulaklak",
+    "description": "Crispy deep-fried pork intestine served with a spicy vinegar dip.",
+    "price": 9.99,
+    "allergens": ["Pork"],
+    "id": "PHL4"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Dynamite Cheese Sticks",
+    "description": "Spicy green chili peppers stuffed with cheese, wrapped in spring roll wrappers, and deep-fried.",
+    "price": 8.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Wheat", "Dairy"],
+    "id": "PHL5"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Ukoy",
+    "description": "Crispy shrimp fritters made with grated squash and served with a sweet and sour dipping sauce.",
+    "price": 10.99,
+    "allergens": ["Seafood", "Wheat"],
+    "id": "PHL6"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Sisig",
+    "description": "A sizzling plate of chopped pig's face and ears seasoned with tangy calamansi juice and spices.",
+    "price": 12.99,
+    "id": "PHL7"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Tokwa't Baboy",
+    "description": "Crispy fried tofu and pork belly served with a soy-vinegar dipping sauce.",
+    "price": 11.99,
+    "allergens": ["Soy"],
+    "id": "PHL8"
+  },
+  {
+    "country": "Philippines",
+    "type": "Appetizer",
+    "name": "Gambas",
+    "description": "Sautéed shrimp in a flavorful garlic and chili sauce, served with garlic toast.",
+    "price": 13.99,
+    "allergens": ["Seafood"],
+    "id": "PHL9"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Adobo",
+    "description": "The Philippines' national dish, featuring chicken or pork braised in soy sauce, vinegar, garlic, and spices.",
+    "price": 14.99,
+    "id": "PHL10"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Kare-Kare",
+    "description": "A rich and savory oxtail and tripe stew cooked in a peanut-based sauce, served with bagoong (shrimp paste).",
+    "price": 16.99,
+    "allergens": ["Peanuts", "Shrimp"],
+    "id": "PHL11"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Sinigang",
+    "description": "A sour soup made with tamarind broth, vegetables, and your choice of meat or seafood.",
+    "price": 15.99,
+    "id": "PHL12"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Lechon Kawali",
+    "description": "Crispy fried pork belly served with a vinegar dipping sauce and steamed rice.",
+    "price": 16.99,
+    "id": "PHL13"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Pancit Palabok",
+    "description": "A classic Filipino noodle dish topped with a flavorful shrimp sauce, crushed chicharon, and various toppings.",
+    "price": 13.99,
+    "allergens": ["Seafood", "Wheat"],
+    "id": "PHL14"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Chicken Inasal",
+    "description": "Grilled chicken marinated in a blend of citrus, vinegar, and spices, served with garlic rice.",
+    "price": 15.99,
+    "id": "PHL15"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Bistek Tagalog",
+    "description": "Thinly sliced beef marinated in soy sauce and calamansi juice, pan-fried with onions.",
+    "price": 16.99,
+    "id": "PHL16"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Pork Sinigang",
+    "description": "A comforting soup made with pork ribs, tamarind broth, and a variety of vegetables.",
+    "price": 14.99,
+    "id": "PHL17"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Pinakbet",
+    "description": "A vegetable dish made with sautéed mixed vegetables, shrimp paste, and sometimes pork.",
+    "price": 13.99,
+    "allergens": ["Shrimp"],
+    "id": "PHL18"
+  },
+  {
+    "country": "Philippines",
+    "type": "Main",
+    "name": "Beef Caldereta",
+    "description": "A hearty beef stew cooked in a tomato-based sauce with potatoes, carrots, and bell peppers.",
+    "price": 16.99,
+    "id": "PHL19"
+  },
+  {
+    "country": "Philippines",
+    "type": "Drink",
+    "name": "Halo-Halo",
+    "description": "A popular Filipino dessert and drink made with crushed ice, sweetened fruits, jellies, beans, and topped with evaporated milk.",
+    "price": 8.99,
+    "diet": ["Vegetarian"],
+    "id": "PHL20"
+  },
+  {
+    "country": "Philippines",
+    "type": "Drink",
+    "name": "Buko Juice",
+    "description": "Refreshing coconut water served in a young coconut shell.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "PHL21"
+  },
+  {
+    "country": "Philippines",
+    "type": "Drink",
+    "name": "Sago't Gulaman",
+    "description": "A sweet and refreshing drink made with tapioca pearls, gelatin cubes, and brown sugar syrup.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "PHL22"
+  },
+  {
+    "country": "Philippines",
+    "type": "Drink",
+    "name": "Mango Shake",
+    "description": "A blended drink made with ripe mangoes, milk, and a hint of sweetness.",
+    "price": 5.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "PHL23"
+  },
+  {
+    "country": "Philippines",
+    "type": "Drink",
+    "name": "Barako Coffee",
+    "description": "A strong and aromatic coffee brewed from the robusta beans grown in the Philippines.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "id": "PHL24"
+  },
+  {
+    "country": "Philippines",
+    "type": "Dessert",
+    "name": "Leche Flan",
+    "description": "A creamy and velvety caramel custard made with eggs, milk, and caramel syrup.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy", "Eggs"],
+    "id": "PHL25"
+  },
+  {
+    "country": "Philippines",
+    "type": "Dessert",
+    "name": "Halo-Halo",
+    "description": "A delightful mix of sweetened fruits, jellies, beans, and crushed ice topped with evaporated milk and leche flan.",
+    "price": 8.99,
+    "diet": ["Vegetarian"],
+    "id": "PHL26"
+  },
+  {
+    "country": "Philippines",
+    "type": "Dessert",
+    "name": "Bibingka",
+    "description": "A traditional rice cake made with glutinous rice flour and coconut milk, served with grated coconut and salted egg.",
+    "price": 5.99,
+    "diet": ["Vegetarian"],
+    "id": "PHL27"
+  },
+  {
+    "country": "Philippines",
+    "type": "Dessert",
+    "name": "Ube Halaya",
+    "description": "A smooth and vibrant purple yam jam made with grated purple yam, coconut milk, and condensed milk.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "PHL28"
+  },
+  {
+    "country": "Philippines",
+    "type": "Dessert",
+    "name": "Turon",
+    "description": "Crispy fried banana spring rolls coated in caramelized sugar, served with a scoop of vanilla ice cream.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "PHL29"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Fresh Spring Rolls (Gỏi cuốn)",
+    "description": "Rice paper rolls filled with vermicelli noodles, fresh herbs, and your choice of shrimp, pork, or tofu. Served with peanut sauce.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts", "Soy"],
+    "id": "VNM0"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Bánh Mì",
+    "description": "Vietnamese baguette filled with savory grilled meat (such as pork or chicken), pickled vegetables, cilantro, and mayonnaise.",
+    "price": 9.99,
+    "allergens": ["Wheat", "Soy", "Eggs"],
+    "id": "VNM1"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Cha Gio",
+    "description": "Crispy fried spring rolls filled with minced pork, shrimp, vegetables, and mushrooms. Served with a dipping sauce.",
+    "price": 10.99,
+    "allergens": ["Shellfish", "Wheat", "Soy"],
+    "id": "VNM2"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Nem Nuong",
+    "description": "Grilled pork sausage wrapped in rice paper, served with fresh lettuce, herbs, and a sweet and tangy dipping sauce.",
+    "price": 11.99,
+    "id": "VNM3"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Banh Xeo",
+    "description": "Vietnamese-style savory crepes made with rice flour, filled with shrimp, pork, bean sprouts, and herbs.",
+    "price": 10.99,
+    "allergens": ["Shellfish", "Wheat", "Soy"],
+    "id": "VNM4"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Goi Du Du",
+    "description": "Green papaya salad with shrimp, herbs, peanuts, and a tangy dressing.",
+    "price": 9.99,
+    "allergens": ["Peanuts", "Shellfish"],
+    "id": "VNM5"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Bo La Lot",
+    "description": "Grilled beef wrapped in betel leaves, served with vermicelli noodles, fresh herbs, and dipping sauce.",
+    "price": 12.99,
+    "id": "VNM6"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Ca Kho To",
+    "description": "Caramelized fish cooked in a clay pot with a sweet and savory sauce. Served with steamed rice.",
+    "price": 13.99,
+    "allergens": ["Fish"],
+    "id": "VNM7"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Banh Beo",
+    "description": "Steamed rice cakes topped with savory ingredients like dried shrimp, scallions, and fried shallots.",
+    "price": 8.99,
+    "allergens": ["Shellfish"],
+    "id": "VNM8"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Appetizer",
+    "name": "Canh Chua",
+    "description": "A tangy and flavorful Vietnamese sour soup with fish or shrimp, pineapple, tomatoes, and fresh herbs.",
+    "price": 11.99,
+    "allergens": ["Fish", "Shellfish"],
+    "id": "VNM9"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Pho",
+    "description": "Vietnam's iconic noodle soup made with beef or chicken, aromatic broth, rice noodles, and fresh herbs.",
+    "price": 14.99,
+    "id": "VNM10"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Bun Cha",
+    "description": "Grilled pork patties and sliced pork belly served with rice noodles, fresh herbs, and a tangy dipping sauce.",
+    "price": 15.99,
+    "id": "VNM11"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Com Tam",
+    "description": "Broken rice served with grilled pork chop, a fried egg, pickled vegetables, and fish sauce.",
+    "price": 13.99,
+    "id": "VNM12"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Cá Kho Tộ",
+    "description": "Caramelized catfish cooked in a clay pot with a sweet and savory sauce. Served with steamed rice.",
+    "price": 16.99,
+    "allergens": ["Fish"],
+    "id": "VNM13"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Ga Xao Xa Ot",
+    "description": "Stir-fried lemongrass chicken served with steamed rice and fresh vegetables.",
+    "price": 14.99,
+    "id": "VNM14"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Bo Luc Lac",
+    "description": "Cubed beef stir-fried with garlic, onions, and a savory sauce. Served with steamed rice and a side of vegetables.",
+    "price": 16.99,
+    "id": "VNM15"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Goi Cuon Thit Nuong",
+    "description": "Grilled pork summer rolls filled with vermicelli noodles, fresh herbs, and vegetables. Served with a dipping sauce.",
+    "price": 13.99,
+    "id": "VNM16"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Canh Chua Ca",
+    "description": "A tangy and flavorful Vietnamese sour soup with fish, pineapple, tomatoes, and fresh herbs. Served with steamed rice.",
+    "price": 15.99,
+    "allergens": ["Fish"],
+    "id": "VNM17"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Mi Quang",
+    "description": "A regional specialty of Central Vietnam, featuring turmeric-flavored noodles topped with pork, shrimp, herbs, and peanuts.",
+    "price": 13.99,
+    "allergens": ["Peanuts", "Shellfish"],
+    "id": "VNM18"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Main",
+    "name": "Banh Cuon",
+    "description": "Steamed rice rolls filled with ground pork, mushrooms, and shallots, served with a side of fish sauce.",
+    "price": 12.99,
+    "id": "VNM19"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Drink",
+    "name": "Vietnamese Iced Coffee (Cà Phê Sữa Đá)",
+    "description": "Strong and aromatic Vietnamese coffee brewed with condensed milk and served over ice.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "VNM20"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Drink",
+    "name": "Fresh Coconut Water (Nước Dừa)",
+    "description": "Refreshing coconut water served in a fresh coconut shell.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "VNM21"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Drink",
+    "name": "Lemongrass Ginger Tea (Trà Sả Gừng)",
+    "description": "A fragrant tea made with lemongrass, ginger, and honey, served hot or iced.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "VNM22"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Drink",
+    "name": "Sugarcane Juice (Nước Mía)",
+    "description": "Sweet and refreshing juice made from pressed sugarcane, served over ice.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "VNM23"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Drink",
+    "name": "Sinh Tố",
+    "description": "A creamy fruit smoothie made with fresh tropical fruits, ice, and condensed milk or yogurt.",
+    "price": 5.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "VNM24"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Dessert",
+    "name": "Chè",
+    "description": "A sweet Vietnamese dessert soup made with various ingredients like beans, jellies, fruits, and coconut milk.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "VNM25"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Dessert",
+    "name": "Banh Flan",
+    "description": "A Vietnamese-style caramel custard dessert made with eggs, milk, and caramel syrup.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy", "Eggs"],
+    "id": "VNM26"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Dessert",
+    "name": "Che Ba Mau",
+    "description": "A colorful dessert with layers of beans, jellies, and coconut milk, often topped with crushed ice.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "VNM27"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Dessert",
+    "name": "Kem Xôi",
+    "description": "A combination of sticky rice, mung bean paste, and ice cream, served with various toppings.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "VNM28"
+  },
+  {
+    "country": "Vietnam",
+    "type": "Dessert",
+    "name": "Bo Bia",
+    "description": "Fresh spring rolls filled with jicama, coconut, dried shrimp, and other ingredients, served with a sweet sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Shellfish"],
+    "id": "VNM29"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Appetizer",
+    "name": "Fresh Spring Rolls (Nime Chow)",
+    "description": "Rice paper rolls filled with vermicelli noodles, fresh herbs, and your choice of shrimp, chicken, or tofu. Served with peanut sauce.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts", "Soy"],
+    "id": "KHM0"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Appetizer",
+    "name": "Cambodian Fish Amok",
+    "description": "A traditional Cambodian dish made with fish fillet, coconut milk, kroeung (aromatic spice paste), and steamed in banana leaf cups.",
+    "price": 11.99,
+    "allergens": ["Fish"],
+    "id": "KHM1"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Appetizer",
+    "name": "Nom Banh Chok",
+    "description": "A popular Cambodian dish consisting of rice noodles topped with a fish-based green curry sauce and an array of fresh vegetables.",
+    "price": 10.99,
+    "allergens": ["Fish"],
+    "id": "KHM2"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Lok Lak",
+    "description": "Stir-fried marinated beef or chicken served with fresh lettuce, tomatoes, onions, and a tangy dipping sauce.",
+    "price": 12.99,
+    "id": "KHM3"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Chicken Satay",
+    "description": "Grilled marinated chicken skewers served with a peanut sauce and pickled vegetables.",
+    "price": 9.99,
+    "allergens": ["Peanuts"],
+    "id": "KHM4"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Prahok Kties",
+    "description": "Grilled marinated pork skewers served with a tangy dipping sauce made with prahok, a fermented fish paste.",
+    "price": 9.99,
+    "allergens": ["Fish", "Pork"],
+    "id": "KHM5"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Green Mango Salad (Bok L'hong)",
+    "description": "Shredded green mango mixed with fresh herbs, peanuts, and a tangy dressing, creating a refreshing and zesty salad.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "KHM6"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Bai Sach Chrouk",
+    "description": "Grilled pork marinated in a mixture of garlic, soy sauce, and coconut milk, served with steamed rice and pickled vegetables.",
+    "price": 10.99,
+    "allergens": ["Pork"],
+    "id": "KHM7"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Lok Lak",
+    "description": "Marinated beef stir-fried with onions, tomatoes, and a tangy sauce, served with steamed rice and a side of fresh vegetables.",
+    "price": 12.99,
+    "id": "KHM8"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Fish Curry (Samlor Machu Ktis)",
+    "description": "A flavorful curry made with fish, spices, and aromatic herbs, served with steamed rice.",
+    "price": 13.99,
+    "allergens": ["Fish"],
+    "id": "KHM9"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Chicken Amok",
+    "description": "A popular Cambodian dish featuring tender chicken cooked in a rich coconut curry sauce with spices and herbs, served in a banana leaf bowl.",
+    "price": 12.99,
+    "id": "KHM10"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Chrouk Metae",
+    "description": "Stir-fried squid with vegetables in a flavorful sauce, served with steamed rice.",
+    "price": 14.99,
+    "allergens": ["Mollusks"],
+    "id": "KHM11"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Fish Lok Lak",
+    "description": "Stir-fried fish fillet with a flavorful sauce, served with steamed rice and a side of fresh vegetables.",
+    "price": 14.99,
+    "allergens": ["Fish"],
+    "id": "KHM12"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Amok Trey",
+    "description": "Steamed fish fillet in a fragrant coconut-based curry, served with steamed rice.",
+    "price": 15.99,
+    "allergens": ["Fish"],
+    "id": "KHM13"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Kuy Teav",
+    "description": "A popular Cambodian noodle soup made with rice noodles, beef or pork, and a flavorful broth.",
+    "price": 12.99,
+    "id": "KHM14"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Bai Sach Chrouk",
+    "description": "Grilled pork served over rice with pickled vegetables and a side of chicken or beef broth.",
+    "price": 13.99,
+    "id": "KHM15"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Main",
+    "name": "Beef Lok Lak",
+    "description": "Stir-fried beef with a tangy sauce, served with steamed rice and fresh lettuce.",
+    "price": 14.99,
+    "id": "KHM16"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Drink",
+    "name": "Iced Coffee (Cafe Dtuk Dtuk)",
+    "description": "Strong and sweet Cambodian iced coffee made with condensed milk.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "KHM17"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Drink",
+    "name": "Tamarind Juice (Tuk Meric)",
+    "description": "Refreshing tamarind juice with a hint of lime and sugar.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM18"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Drink",
+    "name": "Fresh Coconut Water (Tek Pnou)",
+    "description": "Chilled coconut water served in a fresh coconut shell.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM19"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Drink",
+    "name": "Ginger Lime Soda (Tuk Kroeung Karab)*",
+    "description": "A fizzy and tangy soda made with fresh ginger, lime, and soda water.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM20"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Drink",
+    "name": "Pineapple Lime Smoothie (Broyet Ananas)*",
+    "description": "A tropical and refreshing smoothie made with pineapple, lime, and ice.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM21"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Dessert",
+    "name": "Sticky Rice with Mango (Nom Ansom Chek)*",
+    "description": "Sweet sticky rice topped with fresh mango slices and a drizzle of coconut cream.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM22"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Dessert",
+    "name": "Num Plae Ai",
+    "description": "A traditional Cambodian dessert made with sticky rice, coconut milk, and palm sugar, wrapped in banana leaves.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM23"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Dessert",
+    "name": "Pumpkin Custard (Sankya Lapov)",
+    "description": "A creamy and spiced pumpkin custard baked in a pumpkin shell.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Eggs"],
+    "id": "KHM24"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Dessert",
+    "name": "Banana Fritters (Chek Chien)",
+    "description": "Deep-fried banana fritters served with a sweet syrup or condensed milk.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "KHM25"
+  },
+  {
+    "country": "Cambodia",
+    "type": "Dessert",
+    "name": "Khmer Jelly (Num Kouy)",
+    "description": "Colorful and jiggly jelly dessert made with agar agar, coconut milk, and various flavors.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "KHM26"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Acar Awak",
+    "description": "A tangy and refreshing pickled salad made with cucumber, carrot, and shallots, dressed in a sweet and sour vinegar-based sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS0"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Popiah",
+    "description": "Fresh spring rolls filled with a mixture of julienned vegetables, tofu, and sometimes shrimp, wrapped in a delicate crepe-like skin.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Shellfish"],
+    "id": "MYS1"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Satay",
+    "description": "Grilled skewered meat (chicken, beef, or lamb) served with peanut sauce and cucumber chunks.",
+    "price": 9.99,
+    "allergens": ["Peanuts"],
+    "id": "MYS2"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Popiah",
+    "description": "Fresh spring rolls filled with jicama, carrots, tofu, and other vegetables, served with a sweet sauce.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS3"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Roti Canai",
+    "description": "Flaky Indian-style flatbread served with a side of curry sauce for dipping.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "id": "MYS4"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Kerabu Salad",
+    "description": "A tangy and refreshing salad made with shredded vegetables, herbs, and a zesty dressing.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS5"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Appetizer",
+    "name": "Otak-Otak",
+    "description": "Steamed fish cake wrapped in banana leaves, infused with aromatic herbs and spices.",
+    "price": 10.99,
+    "allergens": ["Fish"],
+    "id": "MYS6"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Nasi Lemak",
+    "description": "Fragrant coconut rice served with spicy sambal, fried anchovies, peanuts, cucumber, and a choice of meat or vegetables.",
+    "price": 12.99,
+    "allergens": ["Fish", "Shellfish"],
+    "id": "MYS7"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Beef Rendang",
+    "description": "A slow-cooked dish of tender beef in a rich and spicy coconut curry sauce, served with rice.",
+    "price": 14.99,
+    "id": "MYS8"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Rendang",
+    "description": "A rich and flavorful Malay curry made with slow-cooked beef or chicken in a blend of spices and coconut milk, served with steamed rice.",
+    "price": 14.99,
+    "id": "MYS9"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Hainanese Chicken Rice",
+    "description": "Tender poached chicken served with fragrant rice cooked in chicken broth, accompanied by ginger sauce and chili sauce.",
+    "price": 11.99,
+    "id": "MYS10"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Char Kway Teow",
+    "description": "Stir-fried flat rice noodles with shrimp, Chinese sausage, bean sprouts, and eggs in a savory sauce.",
+    "price": 12.99,
+    "allergens": ["Shellfish", "Eggs"],
+    "id": "MYS11"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Chicken Satay with Peanut Sauce",
+    "description": "Grilled marinated chicken skewers served with a creamy peanut sauce and rice cakes.",
+    "price": 11.99,
+    "allergens": ["Peanuts"],
+    "id": "MYS12"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Main",
+    "name": "Mee Goreng",
+    "description": "Spicy stir-fried noodles with shrimp, tofu, eggs, and a variety of vegetables, garnished with lime and cilantro.",
+    "price": 13.99,
+    "allergens": ["Shellfish", "Eggs"],
+    "id": "MYS13"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Drink",
+    "name": "Teh Tarik",
+    "description": "A hot or iced milk tea made by \"pulling\"it between two cups, creating a frothy and smooth texture.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "MYS14"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Drink",
+    "name": "Milo Dinosaur",
+    "description": "A cold Milo beverage topped with a generous amount of Milo powder for an extra chocolatey kick.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "MYS15"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Drink",
+    "name": "Bandung",
+    "description": "A refreshing rose-flavored milk drink that is sweet and fragrant.",
+    "price": 3.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "MYS16"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Drink",
+    "name": "Sirap Limau",
+    "description": "A tangy and sweet lime syrup drink served with ice, perfect for hot weather.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS17"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Drink",
+    "name": "Air Mata Kucing",
+    "description": "A traditional herbal drink made from longan fruit, dried longan, and a blend of Chinese herbs.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS18"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Dessert",
+    "name": "Cendol",
+    "description": "A popular Malaysian dessert made with pandan-flavored jelly noodles, palm sugar syrup, coconut milk, and shaved ice.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS19"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Dessert",
+    "name": "ABC (Ais Batu Campur)",
+    "description": "A colorful dessert made with shaved ice, sweetened syrups, various toppings, and condensed milk.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "MYS20"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Dessert",
+    "name": "Pulut Hitam",
+    "description": "A sweet dessert made with black glutinous rice cooked in coconut milk, served with a drizzle of palm sugar.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS21"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Dessert",
+    "name": "Kuih Dadar",
+    "description": "Pandan crepes filled with grated coconut sweetened with palm sugar, rolled into a delicious snack.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MYS22"
+  },
+  {
+    "country": "Malaysia",
+    "type": "Dessert",
+    "name": "Tau Foo Fah",
+    "description": "Silky smooth soybean pudding served with a light syrup, often enjoyed hot or cold.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Soy"],
+    "id": "MYS23"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Appetizer",
+    "name": "Tea Leaf Salad (Laphet Thoke)",
+    "description": "A traditional Burmese salad made with fermented tea leaves, mixed with crispy nuts, seeds, and vegetables.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts", "Sesame"],
+    "id": "MMR0"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Appetizer",
+    "name": "Samosas",
+    "description": "Deep-fried pastry pockets filled with savory fillings such as spiced potatoes, peas, and sometimes meat.",
+    "price": 7.99,
+    "diet": ["Vegetarian"],
+    "id": "MMR1"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Mohinga",
+    "description": "A popular Burmese noodle soup made with fish broth, rice noodles, and various toppings like crispy fritters and boiled eggs.",
+    "price": 9.99,
+    "allergens": ["Fish", "Shellfish"],
+    "id": "MMR2"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Prawn Tempura",
+    "description": "Crispy battered and deep-fried prawns served with a tangy dipping sauce.",
+    "price": 10.99,
+    "allergens": ["Shellfish"],
+    "id": "MMR3"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Shan Tofu",
+    "description": "A special tofu made from chickpea flour, served with a flavorful dipping sauce and fried garlic.",
+    "price": 8.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR4"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Mont Hin Ga",
+    "description": "A popular Burmese dish consisting of rice noodles served in a fish-based broth with toppings such as fried chickpea fritters, sliced fish cake, boiled egg, and fresh herbs.",
+    "price": 8.99,
+    "allergens": ["Fish", "Eggs"],
+    "id": "MMR5"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Mandalay-style Samosas",
+    "description": "Crispy pastry filled with a savory mixture of spiced potatoes, peas, and sometimes minced meat, served with a tamarind dipping sauce.",
+    "price": 6.99,
+    "diet": ["Vegetarian"],
+    "id": "MMR6"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Ohn No Khao Swe",
+    "description": "A popular Burmese noodle dish featuring a coconut-based chicken curry served over noodles and garnished with various toppings like fried noodles, boiled egg, and fresh herbs.",
+    "price": 12.99,
+    "allergens": ["Poultry", "Wheat"],
+    "id": "MMR7"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Mohinga",
+    "description": "A traditional Burmese breakfast dish of rice noodles in a rich fish broth, garnished with various toppings.",
+    "price": 12.99,
+    "allergens": ["Fish"],
+    "id": "MMR8"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Burmese Curry",
+    "description": "A fragrant and mildly spiced curry made with chicken, beef, or vegetables, served with rice or noodles.",
+    "price": 13.99,
+    "id": "MMR9"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Kyay Oh",
+    "description": "A comforting noodle soup with egg noodles, pork or chicken slices, bean sprouts, and garnished with crispy fried garlic and spring onions.",
+    "price": 10.99,
+    "allergens": ["Poultry", "Pork", "Wheat"],
+    "id": "MMR10"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Laphet Thoke (Tea Leaf Salad)",
+    "description": "A unique and tangy salad made with fermented tea leaves, fried garlic, roasted peanuts, sesame seeds, and various crunchy ingredients, creating a burst of flavors.",
+    "price": 9.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Peanuts", "Sesame"],
+    "id": "MMR11"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Burmese-style BBQ Pork Ribs",
+    "description": "Tender and succulent pork ribs marinated with a blend of spices and grilled to perfection, served with a side of dipping sauce.",
+    "price": 14.99,
+    "allergens": ["Pork"],
+    "id": "MMR12"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Shan Noodles (Shan Khauk Swe)",
+    "description": "Egg noodles served with a tangy and savory sauce, topped with slices of chicken or pork and crunchy garnishes.",
+    "price": 11.99,
+    "id": "MMR13"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Burmese Tea Leaf Curry (Laphet Htamin)",
+    "description": "A flavorful rice dish made with fermented tea leaves, served with various accompaniments.",
+    "price": 12.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "MMR14"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Main",
+    "name": "Grilled Fish with Tamarind Sauce",
+    "description": "Fresh fish marinated and grilled to perfection, served with a tangy tamarind sauce and steamed rice.",
+    "price": 14.99,
+    "allergens": ["Fish"],
+    "id": "MMR15"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Drink",
+    "name": "Myanmar Beer",
+    "description": "A popular local beer with a crisp and refreshing taste.",
+    "price": 5.99,
+    "diet": ["Vegetarian"],
+    "id": "MMR16"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Drink",
+    "name": "Fresh Sugarcane Juice (Ohn Thee)",
+    "description": "Sweet and refreshing juice made from freshly squeezed sugarcane.",
+    "price": 4.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR17"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Drink",
+    "name": "Coconut Water (Hnan Yay)",
+    "description": "Chilled coconut water served in a young coconut, perfect for quenching your thirst.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR18"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Drink",
+    "name": "Burmese Milk Tea (Lahpet Yay Lapyan)",
+    "description": "A strong black tea infused with condensed milk, giving it a creamy and sweet flavor.",
+    "price": 4.99,
+    "diet": ["Vegetarian"],
+    "allergens": ["Dairy"],
+    "id": "MMR19"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Drink",
+    "name": "Lime Soda (Yay Kyaw Sone)",
+    "description": "A fizzy lime soda with a hint of sweetness, served over ice.",
+    "price": 3.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR20"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Dessert",
+    "name": "Mont Lone Yay Paw",
+    "description": "A traditional Burmese dessert made with glutinous rice balls filled with jaggery and coated in grated coconut.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR21"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Dessert",
+    "name": "Mote Lone Yay Paw",
+    "description": "Similar to Mont Lone Yay Paw, but filled with crushed peanuts instead of jaggery.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "allergens": ["Peanuts"],
+    "id": "MMR22"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Dessert",
+    "name": "Shwe Yin Aye",
+    "description": "A delightful dessert soup made with coconut milk, jelly, tapioca pearls, and various colorful ingredients.",
+    "price": 7.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR23"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Dessert",
+    "name": "Kyauk Kyaw",
+    "description": "Sweet jelly made from agar agar, flavored with pandan, coconut, or fruit essences, often served with palm sugar syrup.",
+    "price": 5.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR24"
+  },
+  {
+    "country": "Myanmar",
+    "type": "Dessert",
+    "name": "Htamanè",
+    "description": "A traditional Burmese dessert made with sticky rice, jaggery, and grated coconut, often enjoyed during festivals.",
+    "price": 6.99,
+    "diet": ["Vegetarian", "Vegan"],
+    "id": "MMR25"
+  }
+]

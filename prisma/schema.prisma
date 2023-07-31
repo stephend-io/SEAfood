@@ -1,0 +1,98 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Food {
+  id          String      @id @unique
+  country     Country
+  type        FoodType
+  name        String
+  description String
+  price       Int
+  images      String[]
+  allergens   Allergens[]
+}
+
+model User {
+  id         String   @unique @default(uuid())
+  name       String
+  favourites String[]
+  email      String
+  purchases  Purchase @relation(fields: [purchaseId], references: [id])
+  cart       Cart?
+  purchaseId Int
+}
+
+model Cart {
+  id       Int        @id @unique @default(autoincrement())
+  items    CartItem[]
+  date     DateTime
+  total    Int
+  user     User       @relation(fields: [userId], references: [id])
+  codeUsed String
+  userId   String     @unique
+}
+
+model CartItem {
+  id                  String   @id @unique
+  type                FoodType
+  name                String
+  price               Int
+  quantity            Int
+  specialInstructions String
+  Cart                Cart?    @relation(fields: [cartId], references: [id])
+  cartId              Int?
+}
+
+model Purchase {
+  id   Int    @id @unique @default(autoincrement())
+  User User[]
+}
+
+enum Country {
+  Philippines
+  Myanmar
+  Malaysia
+  Indonesia
+  Singapore
+  Thailand
+  Vietnam
+  EastTimor
+  Brunei
+  Laos
+  Cambodia
+}
+
+enum Allergens {
+  Peanuts
+  Crustaceans
+  Soy
+  Wheat
+  Fish
+  Coconut
+  Eggs
+  Nuts
+  Shellfish
+  Dairy
+  Pork
+  Seafood
+  Shrimp
+  Mollusks
+  Sesame
+  Poultry
+}
+
+enum FoodType {
+  Appetizer
+  Main
+  Drink
+  Dessert
+}
