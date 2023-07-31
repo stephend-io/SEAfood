@@ -5,7 +5,6 @@
     "name": "Gado-Gado",
     "description": "A salad made with mixed vegetables, tofu, and hard-boiled eggs, topped with peanut sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "IDN0"
   },
@@ -15,7 +14,6 @@
     "name": "Lumpia Semarang",
     "description": "Crispy spring rolls filled with bamboo shoots, shrimp, and chicken, served with a sweet and sour dipping sauce.",
     "price": 8.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Soy", "Wheat"],
     "id": "IDN1"
   },
@@ -34,7 +32,6 @@
     "name": "Siomay",
     "description": "Steamed fish and shrimp dumplings served with a spicy peanut sauce and sweet soy sauce.",
     "price": 7.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish", "Soy", "Peanuts", "Wheat"],
     "id": "IDN3"
   },
@@ -53,7 +50,6 @@
     "name": "Otak-Otak",
     "description": "Grilled fish cake made from ground fish mixed with spices and wrapped in banana leaves.",
     "price": 7.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish", "Coconut"],
     "id": "IDN5"
   },
@@ -63,7 +59,6 @@
     "name": "Perkedel Kentang",
     "description": "Fried potato cakes made with mashed potatoes, onions, and spices.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN6"
   },
   {
@@ -72,7 +67,6 @@
     "name": "Bakwan Jagung",
     "description": "Crispy corn fritters made with sweet corn kernels, flour, and spices.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "IDN7"
   },
   {
@@ -81,7 +75,6 @@
     "name": "Pempek",
     "description": "Fishcake made from ground fish and tapioca flour, served with a tangy vinegar-based sauce.",
     "price": 8.99,
-    "diet": ["Pescatarian", "Gluten-Free"],
     "allergens": ["Fish"],
     "id": "IDN8"
   },
@@ -91,7 +84,6 @@
     "name": "Rujak",
     "description": "A mixed fruit salad with a spicy tamarind dressing, often garnished with peanuts and fried shallots.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "IDN9"
   },
@@ -127,7 +119,6 @@
     "name": "Gado-Gado",
     "description": "A popular Indonesian salad made with a mix of vegetables, tofu, and hard-boiled eggs, dressed with peanut sauce.",
     "price": 10.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "IDN13"
   },
@@ -161,7 +152,6 @@
     "name": "Sambal Udang",
     "description": "Spicy stir-fried shrimp cooked in a flavorful chili paste, served with steamed rice.",
     "price": 16.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans"],
     "id": "IDN17"
   },
@@ -171,7 +161,6 @@
     "name": "Pepes Ikan",
     "description": "Fish fillets marinated in a spicy paste, wrapped in banana leaves, and steamed to perfection.",
     "price": 14.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish", "Coconut"],
     "id": "IDN18"
   },
@@ -181,7 +170,6 @@
     "name": "Sayur Lodeh",
     "description": "A coconut milk-based vegetable curry with a mix of vegetables, tofu, and tempeh.",
     "price": 11.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Soy", "Coconut"],
     "id": "IDN19"
   },
@@ -199,7 +187,6 @@
     "name": "Es Campur",
     "description": "A refreshing mixed dessert drink with shaved ice, assorted fruits, jellies, and sweet syrups.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN21"
   },
   {
@@ -224,7 +211,6 @@
     "name": "Es Cendol",
     "description": "A sweet and creamy dessert drink made with pandan-flavored rice jelly, coconut milk, and palm sugar syrup.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN24"
   },
   {
@@ -233,7 +219,6 @@
     "name": "Pisang Goreng",
     "description": "Crispy fried bananas, served hot and sprinkled with powdered sugar.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN25"
   },
   {
@@ -242,7 +227,6 @@
     "name": "Klepon",
     "description": "Sweet glutinous rice balls filled with palm sugar, coated with grated coconut.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN26"
   },
   {
@@ -251,7 +235,6 @@
     "name": "Kue Lapis",
     "description": "Layered colorful steamed cake made from rice flour, coconut milk, and pandan flavoring.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN27"
   },
   {
@@ -260,7 +243,6 @@
     "name": "Es Teler",
     "description": "A refreshing dessert made with a mix of fruits, coconut, avocado, and condensed milk, served with crushed ice.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "id": "IDN28"
   },
   {
@@ -269,7 +251,6 @@
     "name": "Bubur Ketan Hitam",
     "description": "A warm black sticky rice pudding with coconut milk and palm sugar syrup.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "IDN29"
   },
   {
@@ -287,7 +268,6 @@
     "name": "Popiah",
     "description": "Fresh spring rolls filled with vegetables, tofu, and shrimp, served with a sweet sauce.",
     "price": 8.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Soy", "Wheat"],
     "id": "SGP1"
   },
@@ -297,7 +277,6 @@
     "name": "Laksa",
     "description": "A spicy coconut-based noodle soup with shrimp, fish cakes, tofu, and bean sprouts.",
     "price": 10.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Fish", "Soy", "Wheat"],
     "id": "SGP2"
   },
@@ -316,7 +295,6 @@
     "name": "Otak-Otak",
     "description": "Spiced fish paste grilled in a banana leaf, creating a smoky and aromatic appetizer.",
     "price": 7.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish", "Coconut"],
     "id": "SGP4"
   },
@@ -326,7 +304,6 @@
     "name": "Rojak",
     "description": "A salad of mixed fruits and vegetables dressed in a tangy and spicy shrimp paste sauce.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Crustaceans"],
     "id": "SGP5"
   },
@@ -345,7 +322,6 @@
     "name": "Roti Prata",
     "description": "Flaky and crispy Indian flatbread served with a side of curry for dipping.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP7"
   },
   {
@@ -363,7 +339,6 @@
     "name": "Satay Bee Hoon",
     "description": "Rice vermicelli noodles topped with satay sauce, sliced cucumber, bean sprouts, and tofu.",
     "price": 9.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts", "Soy", "Wheat"],
     "id": "SGP9"
   },
@@ -381,7 +356,6 @@
     "name": "Chili Crab",
     "description": "Crab cooked in a tangy and spicy tomato-based sauce, best enjoyed with steamed buns.",
     "price": 25.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Soy", "Wheat"],
     "id": "SGP11"
   },
@@ -391,7 +365,6 @@
     "name": "Char Kway Teow",
     "description": "Stir-fried rice noodles with shrimp, Chinese sausage, bean sprouts, eggs, and soy sauce.",
     "price": 11.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Soy", "Wheat"],
     "id": "SGP12"
   },
@@ -436,7 +409,6 @@
     "name": "Laksa",
     "description": "A spicy noodle soup with coconut-based broth, shrimp, fish cakes, tofu, and bean sprouts.",
     "price": 12.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Fish", "Soy", "Wheat"],
     "id": "SGP17"
   },
@@ -455,7 +427,6 @@
     "name": "Mee Goreng",
     "description": "Stir-fried noodles with shrimp, chicken, vegetables, and a flavorful sweet and spicy sauce.",
     "price": 11.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Soy", "Wheat"],
     "id": "SGP19"
   },
@@ -473,7 +444,6 @@
     "name": "Bandung",
     "description": "A refreshing drink made with rose syrup, milk, and a hint of evaporated milk.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "id": "SGP21"
   },
   {
@@ -482,7 +452,6 @@
     "name": "Milo Dinosaur",
     "description": "Iced Milo beverage topped with an extra heap of Milo powder for added chocolatey goodness.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "id": "SGP22"
   },
   {
@@ -499,7 +468,6 @@
     "name": "Calamansi Juice",
     "description": "A tangy and refreshing citrus drink made from calamansi limes, sugar, and water.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP24"
   },
   {
@@ -508,7 +476,6 @@
     "name": "Ice Kachang",
     "description": "A colorful dessert of shaved ice topped with various sweet ingredients like red beans, jellies, and syrups.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP25"
   },
   {
@@ -517,7 +484,6 @@
     "name": "Chendol",
     "description": "A sweet dessert made with green jelly noodles, coconut milk, palm sugar syrup, and red beans.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP26"
   },
   {
@@ -526,7 +492,6 @@
     "name": "Bubur Cha Cha",
     "description": "A warm dessert of yam and sweet potato cubes in a coconut milk-based broth, sweetened with palm sugar.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP27"
   },
   {
@@ -535,7 +500,6 @@
     "name": "Durian Pengat",
     "description": "A creamy and rich durian dessert made from pureed durian flesh, coconut milk, and palm sugar.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP28"
   },
   {
@@ -544,7 +508,6 @@
     "description": "A warm black glutinous rice dessert cooked with coconut milk and palm sugar, topped with coconut cream.",
     "name": "Pulut Hitam",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "SGP29"
   },
   {
@@ -553,7 +516,6 @@
     "name": "Tom Yum Goong",
     "description": "Spicy and sour shrimp soup with lemongrass, lime leaves, galangal, and chili.",
     "price": 9.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans"],
     "id": "THA0"
   },
@@ -572,7 +534,6 @@
     "name": "Som Tam",
     "description": "Spicy green papaya salad with tomatoes, green beans, peanuts, and a tangy lime dressing.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "THA2"
   },
@@ -582,7 +543,6 @@
     "name": "Thai Fish Cakes (Tod Mun Pla)",
     "description": "Deep-fried fish cakes made with minced fish, red curry paste, and herbs, served with sweet chili sauce.",
     "price": 7.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish", "Eggs"],
     "id": "THA3"
   },
@@ -601,7 +561,6 @@
     "name": "Miang Kham",
     "description": "A traditional Thai snack of betel leaves filled with various toppings like roasted coconut, peanuts, lime, ginger, and shrimp, served with a sweet and tangy sauce.",
     "price": 6.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Peanuts", "Soy"],
     "id": "THA5"
   },
@@ -611,7 +570,6 @@
     "name": "Poh Pia Tod",
     "description": "Crispy spring rolls filled with vegetables, glass noodles, and tofu, served with a sweet chili sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Soy", "Wheat"],
     "id": "THA6"
   },
@@ -621,7 +579,6 @@
     "name": "Yum Woon Sen",
     "description": "A refreshing glass noodle salad with minced pork, shrimp, tomatoes, onions, and a spicy lime dressing.",
     "price": 8.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans"],
     "id": "THA7"
   },
@@ -631,7 +588,6 @@
     "name": "Khao Tang Na Tang",
     "description": "Crispy rice crackers served with a flavorful minced pork and shrimp dip.",
     "price": 6.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans"],
     "id": "THA8"
   },
@@ -641,7 +597,6 @@
     "name": "Tod Man Pla",
     "description": "Thai-style fish cakes made with minced fish, red curry paste, green beans, and kaffir lime leaves, deep-fried until golden brown.",
     "price": 7.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "THA9"
   },
@@ -651,7 +606,6 @@
     "name": "Pad Thai",
     "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts, flavored with tamarind sauce.",
     "price": 12.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Peanuts"],
     "id": "THA10"
   },
@@ -661,7 +615,6 @@
     "name": "Green Curry (Gaeng Keow Wan)",
     "description": "A spicy and aromatic green curry made with coconut milk, green chili paste, meat (chicken, beef, or shrimp), and Thai basil.",
     "price": 14.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Fish"],
     "id": "THA11"
   },
@@ -706,7 +659,6 @@
     "name": "Pineapple Fried Rice",
     "description": "Fried rice with pineapple, shrimp, chicken, cashew nuts, raisins, and curry powder, served in a pineapple shell.",
     "price": 12.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Crustaceans", "Nuts"],
     "id": "THA16"
   },
@@ -740,7 +692,6 @@
     "name": "Thai Iced Tea",
     "description": "A sweet and creamy iced tea made with strong black tea, condensed milk, and evaporated milk.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "id": "THA20"
   },
   {
@@ -749,7 +700,6 @@
     "name": "Thai Iced Coffee",
     "description": "A refreshing iced coffee with a hint of sweetness, made with dark roasted coffee, condensed milk, and ice.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "id": "THA21"
   },
   {
@@ -758,7 +708,6 @@
     "name": "Fresh Coconut Water",
     "description": "Chilled and refreshing coconut water served straight from the coconut.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA22"
   },
   {
@@ -767,7 +716,6 @@
     "name": "Mango Sticky Rice Smoothie",
     "description": "A tropical smoothie made with ripe mangoes, coconut milk, and sticky rice, blended into a creamy delight.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA23"
   },
   {
@@ -776,7 +724,6 @@
     "name": "Pandan Juice",
     "description": "A fragrant and refreshing drink made from pandan leaves, often served with a squeeze of lime.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA24"
   },
   {
@@ -785,7 +732,6 @@
     "name": "Mango Sticky Rice",
     "description": "A classic Thai dessert consisting of ripe mango slices served with sweet glutinous rice and coconut sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA25"
   },
   {
@@ -794,7 +740,6 @@
     "name": "Tub Tim Krob",
     "description": "A delightful dessert of crunchy water chestnuts coated in colored tapioca flour, served in sweet coconut milk.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA26"
   },
   {
@@ -803,7 +748,6 @@
     "name": "Coconut Ice Cream",
     "description": "Creamy and refreshing coconut milk-based ice cream, served in a coconut shell with various toppings.",
     "price": 5.99,
-    "diet": ["Vegetarian"],
     "id": "THA27"
   },
   {
@@ -812,7 +756,6 @@
     "name": "Khanom Buang",
     "description": "Crispy Thai-style crepes filled with sweet and savory fillings like meringue, coconut cream, and shredded coconut.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "THA28"
   },
   {
@@ -821,7 +764,6 @@
     "name": "Thai Banana Fritters (Goreng Pisang)",
     "description": "Sliced bananas coated in a light batter, deep-fried until golden brown, and served with a drizzle of honey.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "THA29"
   },
   {
@@ -838,7 +780,6 @@
     "name": "Mok Pa",
     "description": "Steamed fish wrapped in banana leaves with herbs, spices, and coconut milk.",
     "price": 10.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO2"
   },
@@ -856,7 +797,6 @@
     "name": "Mok Houm",
     "description": "Grilled mushroom salad with fresh herbs, lime dressing, and a touch of spice.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO4"
   },
   {
@@ -882,7 +822,6 @@
     "name": "Khai Paen",
     "description": "Deep-fried riverweed seasoned with spices, served as a crunchy snack.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO7"
   },
   {
@@ -923,7 +862,6 @@
     "name": "Or Lam Mok",
     "description": "Fish steamed in banana leaves with vegetables, herbs, and a spicy sauce.",
     "price": 13.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO12"
   },
@@ -933,7 +871,6 @@
     "name": "Ping Pa",
     "description": "Grilled fish marinated in herbs and spices, served with a side of sticky rice.",
     "price": 15.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO13"
   },
@@ -943,7 +880,6 @@
     "name": "Mok Pa Ma",
     "description": "Grilled fish wrapped in banana leaves with a zesty marinade of herbs, spices, and coconut milk.",
     "price": 14.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO14"
   },
@@ -977,7 +913,6 @@
     "name": "Orlam Khua Pa",
     "description": "Grilled fish marinated in a flavorful mixture of herbs, spices, and lemongrass, served with vegetables.",
     "price": 15.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO18"
   },
@@ -987,7 +922,6 @@
     "name": "Mok Pha",
     "description": "Fish cooked in banana leaves with a fragrant mixture of herbs, spices, and coconut milk.",
     "price": 14.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Fish"],
     "id": "LAO19"
   },
@@ -1005,7 +939,6 @@
     "name": "Lao Coffee",
     "description": "Strong and aromatic coffee brewed in a traditional Lao style, often served with condensed milk.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "id": "LAO21"
   },
   {
@@ -1014,7 +947,6 @@
     "name": "Lemongrass Iced Tea",
     "description": "Iced tea infused with lemongrass, offering a refreshing and citrusy flavor.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO22"
   },
   {
@@ -1023,7 +955,6 @@
     "name": "Coconut Shake",
     "description": "A creamy and tropical shake made with fresh coconut, ice, and a hint of sweetness.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO23"
   },
   {
@@ -1032,7 +963,6 @@
     "name": "Fruit Smoothie",
     "description": "A delightful blend of fresh seasonal fruits, ice, and a touch of sweetness, served chilled.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO24"
   },
   {
@@ -1041,7 +971,6 @@
     "name": "Sticky Rice with Mango",
     "description": "A classic Lao dessert featuring sticky rice paired with ripe mango slices and coconut milk.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO25"
   },
   {
@@ -1050,7 +979,6 @@
     "name": "Khao Lam",
     "description": "Sweet sticky rice cooked with black beans, coconut milk, and wrapped in bamboo leaves.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO26"
   },
   {
@@ -1059,7 +987,6 @@
     "name": "Thong Yip",
     "description": "Golden flower-shaped sweet custard made from egg yolks and sugar, often served on special occasions.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Eggs"],
     "id": "LAO27"
   },
@@ -1069,7 +996,6 @@
     "name": "Nam Varn",
     "description": "A refreshing dessert of mixed fruits and jelly served in a sweet syrup, topped with crushed ice.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO28"
   },
   {
@@ -1078,7 +1004,6 @@
     "name": "Khanom Kok",
     "description": "Small coconut pancakes with a soft center and crispy edges, often flavored with pandan or coconut.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "LAO29"
   },
   {
@@ -1087,7 +1012,6 @@
     "name": "Ambuyat",
     "description": "A traditional Bruneian dish made from the interior trunk of the sago palm, served with various dipping sauces.",
     "price": 10.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN0"
   },
   {
@@ -1104,7 +1028,6 @@
     "name": "Penyaram",
     "description": "Small, fluffy pancakes made with fermented rice batter, often served with coconut jam.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "BRN2"
   },
   {
@@ -1121,7 +1044,6 @@
     "name": "Kerabu Mangga",
     "description": "A refreshing mango salad with shredded green mango, herbs, peanuts, and a tangy dressing.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "BRN4"
   },
@@ -1139,7 +1061,6 @@
     "name": "Kembayau Salad",
     "description": "A unique salad made with kembayau fruit, cucumber, onion, and a zesty dressing.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN6"
   },
   {
@@ -1156,7 +1077,6 @@
     "name": "Ambal",
     "description": "Pickled vegetables with a tangy and spicy flavor, commonly served as a condiment or side dish.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN8"
   },
   {
@@ -1165,7 +1085,6 @@
     "name": "Ketupat",
     "description": "Compressed rice cakes wrapped in woven palm leaves, often served with savory dishes.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN9"
   },
   {
@@ -1182,7 +1101,6 @@
     "name": "Gadong Fried Kway Teow",
     "description": "Stir-fried flat rice noodles with shrimp, bean sprouts, chives, and a savory soy-based sauce.",
     "price": 12.99,
-    "diet": ["Pescatarian"],
     "allergens": ["Shellfish"],
     "id": "BRN11"
   },
@@ -1200,7 +1118,6 @@
     "name": "Ambuyat Sambal",
     "description": "Sago starch served with a spicy sambal sauce and various side dishes, such as grilled fish or vegetables.",
     "price": 13.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN13"
   },
   {
@@ -1258,7 +1175,6 @@
     "name": "Teh Tarik",
     "description": "A popular hot milk tea made by \"pulling\"the tea back and forth to create a frothy texture.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "id": "BRN20"
   },
   {
@@ -1267,7 +1183,6 @@
     "name": "Air Sirap Limau",
     "description": "A refreshing limeade made with fresh lime juice, sugar syrup, and iced water.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN21"
   },
   {
@@ -1276,7 +1191,6 @@
     "name": "Bandung",
     "description": "A sweet and creamy pink milk drink made with rose syrup and condensed milk.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "BRN22"
   },
@@ -1286,7 +1200,6 @@
     "name": "Iced Kopi-O",
     "description": "A strong black coffee served over ice, commonly enjoyed with sweetened condensed milk.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "BRN23"
   },
@@ -1296,7 +1209,6 @@
     "name": "Coconut Water",
     "description": "Fresh and chilled coconut water served straight from the coconut.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN24"
   },
   {
@@ -1305,7 +1217,6 @@
     "name": "Kuih Lapis",
     "description": "Layered steamed cake made with pandan, coconut, and rice flour, often served as a sweet treat.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN25"
   },
   {
@@ -1314,7 +1225,6 @@
     "name": "Kek Batik",
     "description": "No-bake chocolate biscuit cake made with condensed milk, cocoa powder, and biscuits.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "BRN26"
   },
@@ -1324,7 +1234,6 @@
     "name": "Pengat Pisang",
     "description": "A sweet and creamy dessert made with bananas, coconut milk, palm sugar, and fragrant pandan.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN27"
   },
   {
@@ -1333,7 +1242,6 @@
     "name": "Bingka Ambuyat",
     "description": "Baked cassava cake with a soft and moist texture, often enjoyed with a cup of hot tea.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN28"
   },
   {
@@ -1342,7 +1250,6 @@
     "name": "Cendol",
     "description": "A popular shaved ice dessert with green rice flour jelly, coconut milk, palm sugar, and red beans.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "BRN29"
   },
   {
@@ -1360,7 +1267,6 @@
     "name": "Tukir",
     "description": "Fried banana fritters served with a sweet palm sugar sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS1"
   },
   {
@@ -1377,7 +1283,6 @@
     "name": "Tukir Asin",
     "description": "Savory fried banana fritters sprinkled with salt, giving them a unique flavor.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS3"
   },
   {
@@ -1394,7 +1299,6 @@
     "name": "Dadar Timor",
     "description": "Savory pancake made with rice flour and filled with a mixture of vegetables and herbs.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS5"
   },
   {
@@ -1403,7 +1307,6 @@
     "name": "Tukir Manis",
     "description": "Sweet fried banana fritters coated in a caramelized palm sugar syrup.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS6"
   },
   {
@@ -1412,7 +1315,6 @@
     "name": "Rujak Timor",
     "description": "A tangy and spicy fruit salad made with a mix of tropical fruits and a chili-based dressing.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS7"
   },
   {
@@ -1421,7 +1323,6 @@
     "name": "Bolu Klau",
     "description": "Steamed glutinous rice cakes with shredded coconut and a sprinkle of palm sugar.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS8"
   },
   {
@@ -1430,7 +1331,6 @@
     "name": "Sambal Terong",
     "description": "Grilled eggplant served with a spicy chili sambal sauce.",
     "price": 9.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS9"
   },
   {
@@ -1514,7 +1414,6 @@
     "name": "Batar Da'an Ulo",
     "description": "A vegetarian version of Batar Da'an made with pumpkin, corn, and a medley of vegetables.",
     "price": 11.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS19"
   },
   {
@@ -1523,7 +1422,6 @@
     "name": "Balsa",
     "description": "A refreshing traditional East Timorese drink made from the pulp of a young coconut.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS20"
   },
   {
@@ -1532,7 +1430,6 @@
     "name": "Summoro",
     "description": "A sweet and tangy citrus juice made from local Timorese oranges.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS21"
   },
   {
@@ -1541,7 +1438,6 @@
     "name": "Kafe Timor",
     "description": "Strong and aromatic East Timorese coffee served black or with condensed milk.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "TLS22"
   },
@@ -1551,7 +1447,6 @@
     "name": "Lafaek Baa",
     "description": "A traditional East Timorese corn-based drink, sweetened with palm sugar.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS23"
   },
   {
@@ -1560,7 +1455,6 @@
     "name": "Hibiskus Iced Tea",
     "description": "Iced tea infused with hibiscus flowers, offering a floral and refreshing flavor.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS24"
   },
   {
@@ -1569,7 +1463,6 @@
     "name": "Tukir Kinari",
     "description": "Sweet banana fritters served with a drizzle of honey or caramel sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS25"
   },
   {
@@ -1578,7 +1471,6 @@
     "name": "Manioc Pudim",
     "description": "A creamy and rich cassava pudding topped with coconut cream and grated coconut.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS26"
   },
   {
@@ -1587,7 +1479,6 @@
     "name": "Bolo de Cuscuzeiro",
     "description": "Steamed cornbread made with cornmeal, coconut milk, and a touch of sugar.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS27"
   },
   {
@@ -1596,7 +1487,6 @@
     "name": "Susuwu",
     "description": "A traditional East Timorese dessert made from mashed pumpkin, coconut, and palm sugar.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS28"
   },
   {
@@ -1605,7 +1495,6 @@
     "name": "Kolak Pisang",
     "description": "A warm dessert made with bananas, sweet potatoes, and coconut milk, flavored with pandan.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "TLS29"
   },
   {
@@ -1658,7 +1547,6 @@
     "name": "Dynamite Cheese Sticks",
     "description": "Spicy green chili peppers stuffed with cheese, wrapped in spring roll wrappers, and deep-fried.",
     "price": 8.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Wheat", "Dairy"],
     "id": "PHL5"
   },
@@ -1786,7 +1674,6 @@
     "name": "Halo-Halo",
     "description": "A popular Filipino dessert and drink made with crushed ice, sweetened fruits, jellies, beans, and topped with evaporated milk.",
     "price": 8.99,
-    "diet": ["Vegetarian"],
     "id": "PHL20"
   },
   {
@@ -1795,7 +1682,6 @@
     "name": "Buko Juice",
     "description": "Refreshing coconut water served in a young coconut shell.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "PHL21"
   },
   {
@@ -1804,7 +1690,6 @@
     "name": "Sago't Gulaman",
     "description": "A sweet and refreshing drink made with tapioca pearls, gelatin cubes, and brown sugar syrup.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "PHL22"
   },
   {
@@ -1813,7 +1698,6 @@
     "name": "Mango Shake",
     "description": "A blended drink made with ripe mangoes, milk, and a hint of sweetness.",
     "price": 5.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "PHL23"
   },
@@ -1823,7 +1707,6 @@
     "name": "Barako Coffee",
     "description": "A strong and aromatic coffee brewed from the robusta beans grown in the Philippines.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "id": "PHL24"
   },
   {
@@ -1832,7 +1715,6 @@
     "name": "Leche Flan",
     "description": "A creamy and velvety caramel custard made with eggs, milk, and caramel syrup.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy", "Eggs"],
     "id": "PHL25"
   },
@@ -1842,7 +1724,6 @@
     "name": "Halo-Halo",
     "description": "A delightful mix of sweetened fruits, jellies, beans, and crushed ice topped with evaporated milk and leche flan.",
     "price": 8.99,
-    "diet": ["Vegetarian"],
     "id": "PHL26"
   },
   {
@@ -1851,7 +1732,6 @@
     "name": "Bibingka",
     "description": "A traditional rice cake made with glutinous rice flour and coconut milk, served with grated coconut and salted egg.",
     "price": 5.99,
-    "diet": ["Vegetarian"],
     "id": "PHL27"
   },
   {
@@ -1860,7 +1740,6 @@
     "name": "Ube Halaya",
     "description": "A smooth and vibrant purple yam jam made with grated purple yam, coconut milk, and condensed milk.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "PHL28"
   },
@@ -1870,7 +1749,6 @@
     "name": "Turon",
     "description": "Crispy fried banana spring rolls coated in caramelized sugar, served with a scoop of vanilla ice cream.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "PHL29"
   },
   {
@@ -1879,7 +1757,6 @@
     "name": "Fresh Spring Rolls (Gỏi cuốn)",
     "description": "Rice paper rolls filled with vermicelli noodles, fresh herbs, and your choice of shrimp, pork, or tofu. Served with peanut sauce.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts", "Soy"],
     "id": "VNM0"
   },
@@ -2051,7 +1928,6 @@
     "name": "Vietnamese Iced Coffee (Cà Phê Sữa Đá)",
     "description": "Strong and aromatic Vietnamese coffee brewed with condensed milk and served over ice.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "VNM20"
   },
@@ -2061,7 +1937,6 @@
     "name": "Fresh Coconut Water (Nước Dừa)",
     "description": "Refreshing coconut water served in a fresh coconut shell.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "VNM21"
   },
   {
@@ -2070,7 +1945,6 @@
     "name": "Lemongrass Ginger Tea (Trà Sả Gừng)",
     "description": "A fragrant tea made with lemongrass, ginger, and honey, served hot or iced.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "VNM22"
   },
   {
@@ -2079,7 +1953,6 @@
     "name": "Sugarcane Juice (Nước Mía)",
     "description": "Sweet and refreshing juice made from pressed sugarcane, served over ice.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "VNM23"
   },
   {
@@ -2088,7 +1961,6 @@
     "name": "Sinh Tố",
     "description": "A creamy fruit smoothie made with fresh tropical fruits, ice, and condensed milk or yogurt.",
     "price": 5.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "VNM24"
   },
@@ -2098,7 +1970,6 @@
     "name": "Chè",
     "description": "A sweet Vietnamese dessert soup made with various ingredients like beans, jellies, fruits, and coconut milk.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "VNM25"
   },
   {
@@ -2107,7 +1978,6 @@
     "name": "Banh Flan",
     "description": "A Vietnamese-style caramel custard dessert made with eggs, milk, and caramel syrup.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy", "Eggs"],
     "id": "VNM26"
   },
@@ -2117,7 +1987,6 @@
     "name": "Che Ba Mau",
     "description": "A colorful dessert with layers of beans, jellies, and coconut milk, often topped with crushed ice.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "VNM27"
   },
   {
@@ -2126,7 +1995,6 @@
     "name": "Kem Xôi",
     "description": "A combination of sticky rice, mung bean paste, and ice cream, served with various toppings.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "VNM28"
   },
@@ -2136,7 +2004,6 @@
     "name": "Bo Bia",
     "description": "Fresh spring rolls filled with jicama, coconut, dried shrimp, and other ingredients, served with a sweet sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Shellfish"],
     "id": "VNM29"
   },
@@ -2146,7 +2013,6 @@
     "name": "Fresh Spring Rolls (Nime Chow)",
     "description": "Rice paper rolls filled with vermicelli noodles, fresh herbs, and your choice of shrimp, chicken, or tofu. Served with peanut sauce.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts", "Soy"],
     "id": "KHM0"
   },
@@ -2200,7 +2066,6 @@
     "name": "Green Mango Salad (Bok L'hong)",
     "description": "Shredded green mango mixed with fresh herbs, peanuts, and a tangy dressing, creating a refreshing and zesty salad.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "KHM6"
   },
@@ -2295,7 +2160,6 @@
     "name": "Iced Coffee (Cafe Dtuk Dtuk)",
     "description": "Strong and sweet Cambodian iced coffee made with condensed milk.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "KHM17"
   },
@@ -2305,7 +2169,6 @@
     "name": "Tamarind Juice (Tuk Meric)",
     "description": "Refreshing tamarind juice with a hint of lime and sugar.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM18"
   },
   {
@@ -2314,7 +2177,6 @@
     "name": "Fresh Coconut Water (Tek Pnou)",
     "description": "Chilled coconut water served in a fresh coconut shell.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM19"
   },
   {
@@ -2323,7 +2185,6 @@
     "name": "Ginger Lime Soda (Tuk Kroeung Karab)*",
     "description": "A fizzy and tangy soda made with fresh ginger, lime, and soda water.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM20"
   },
   {
@@ -2332,7 +2193,6 @@
     "name": "Pineapple Lime Smoothie (Broyet Ananas)*",
     "description": "A tropical and refreshing smoothie made with pineapple, lime, and ice.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM21"
   },
   {
@@ -2341,7 +2201,6 @@
     "name": "Sticky Rice with Mango (Nom Ansom Chek)*",
     "description": "Sweet sticky rice topped with fresh mango slices and a drizzle of coconut cream.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM22"
   },
   {
@@ -2350,7 +2209,6 @@
     "name": "Num Plae Ai",
     "description": "A traditional Cambodian dessert made with sticky rice, coconut milk, and palm sugar, wrapped in banana leaves.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM23"
   },
   {
@@ -2359,7 +2217,6 @@
     "name": "Pumpkin Custard (Sankya Lapov)",
     "description": "A creamy and spiced pumpkin custard baked in a pumpkin shell.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Eggs"],
     "id": "KHM24"
   },
@@ -2369,7 +2226,6 @@
     "name": "Banana Fritters (Chek Chien)",
     "description": "Deep-fried banana fritters served with a sweet syrup or condensed milk.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "KHM25"
   },
   {
@@ -2378,7 +2234,6 @@
     "name": "Khmer Jelly (Num Kouy)",
     "description": "Colorful and jiggly jelly dessert made with agar agar, coconut milk, and various flavors.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "KHM26"
   },
   {
@@ -2387,7 +2242,6 @@
     "name": "Acar Awak",
     "description": "A tangy and refreshing pickled salad made with cucumber, carrot, and shallots, dressed in a sweet and sour vinegar-based sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS0"
   },
   {
@@ -2396,7 +2250,6 @@
     "name": "Popiah",
     "description": "Fresh spring rolls filled with a mixture of julienned vegetables, tofu, and sometimes shrimp, wrapped in a delicate crepe-like skin.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Shellfish"],
     "id": "MYS1"
   },
@@ -2415,7 +2268,6 @@
     "name": "Popiah",
     "description": "Fresh spring rolls filled with jicama, carrots, tofu, and other vegetables, served with a sweet sauce.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS3"
   },
   {
@@ -2424,7 +2276,6 @@
     "name": "Roti Canai",
     "description": "Flaky Indian-style flatbread served with a side of curry sauce for dipping.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "id": "MYS4"
   },
   {
@@ -2433,7 +2284,6 @@
     "name": "Kerabu Salad",
     "description": "A tangy and refreshing salad made with shredded vegetables, herbs, and a zesty dressing.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS5"
   },
   {
@@ -2511,7 +2361,6 @@
     "name": "Teh Tarik",
     "description": "A hot or iced milk tea made by \"pulling\"it between two cups, creating a frothy and smooth texture.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "MYS14"
   },
@@ -2521,7 +2370,6 @@
     "name": "Milo Dinosaur",
     "description": "A cold Milo beverage topped with a generous amount of Milo powder for an extra chocolatey kick.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "MYS15"
   },
@@ -2531,7 +2379,6 @@
     "name": "Bandung",
     "description": "A refreshing rose-flavored milk drink that is sweet and fragrant.",
     "price": 3.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "MYS16"
   },
@@ -2541,7 +2388,6 @@
     "name": "Sirap Limau",
     "description": "A tangy and sweet lime syrup drink served with ice, perfect for hot weather.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS17"
   },
   {
@@ -2550,7 +2396,6 @@
     "name": "Air Mata Kucing",
     "description": "A traditional herbal drink made from longan fruit, dried longan, and a blend of Chinese herbs.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS18"
   },
   {
@@ -2559,7 +2404,6 @@
     "name": "Cendol",
     "description": "A popular Malaysian dessert made with pandan-flavored jelly noodles, palm sugar syrup, coconut milk, and shaved ice.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS19"
   },
   {
@@ -2568,7 +2412,6 @@
     "name": "ABC (Ais Batu Campur)",
     "description": "A colorful dessert made with shaved ice, sweetened syrups, various toppings, and condensed milk.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "MYS20"
   },
@@ -2578,7 +2421,6 @@
     "name": "Pulut Hitam",
     "description": "A sweet dessert made with black glutinous rice cooked in coconut milk, served with a drizzle of palm sugar.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS21"
   },
   {
@@ -2587,7 +2429,6 @@
     "name": "Kuih Dadar",
     "description": "Pandan crepes filled with grated coconut sweetened with palm sugar, rolled into a delicious snack.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MYS22"
   },
   {
@@ -2596,7 +2437,6 @@
     "name": "Tau Foo Fah",
     "description": "Silky smooth soybean pudding served with a light syrup, often enjoyed hot or cold.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Soy"],
     "id": "MYS23"
   },
@@ -2606,7 +2446,6 @@
     "name": "Tea Leaf Salad (Laphet Thoke)",
     "description": "A traditional Burmese salad made with fermented tea leaves, mixed with crispy nuts, seeds, and vegetables.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts", "Sesame"],
     "id": "MMR0"
   },
@@ -2616,7 +2455,6 @@
     "name": "Samosas",
     "description": "Deep-fried pastry pockets filled with savory fillings such as spiced potatoes, peas, and sometimes meat.",
     "price": 7.99,
-    "diet": ["Vegetarian"],
     "id": "MMR1"
   },
   {
@@ -2643,7 +2481,6 @@
     "name": "Shan Tofu",
     "description": "A special tofu made from chickpea flour, served with a flavorful dipping sauce and fried garlic.",
     "price": 8.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR4"
   },
   {
@@ -2661,7 +2498,6 @@
     "name": "Mandalay-style Samosas",
     "description": "Crispy pastry filled with a savory mixture of spiced potatoes, peas, and sometimes minced meat, served with a tamarind dipping sauce.",
     "price": 6.99,
-    "diet": ["Vegetarian"],
     "id": "MMR6"
   },
   {
@@ -2705,7 +2541,6 @@
     "name": "Laphet Thoke (Tea Leaf Salad)",
     "description": "A unique and tangy salad made with fermented tea leaves, fried garlic, roasted peanuts, sesame seeds, and various crunchy ingredients, creating a burst of flavors.",
     "price": 9.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Peanuts", "Sesame"],
     "id": "MMR11"
   },
@@ -2732,7 +2567,6 @@
     "name": "Burmese Tea Leaf Curry (Laphet Htamin)",
     "description": "A flavorful rice dish made with fermented tea leaves, served with various accompaniments.",
     "price": 12.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "MMR14"
   },
@@ -2751,7 +2585,6 @@
     "name": "Myanmar Beer",
     "description": "A popular local beer with a crisp and refreshing taste.",
     "price": 5.99,
-    "diet": ["Vegetarian"],
     "id": "MMR16"
   },
   {
@@ -2760,7 +2593,6 @@
     "name": "Fresh Sugarcane Juice (Ohn Thee)",
     "description": "Sweet and refreshing juice made from freshly squeezed sugarcane.",
     "price": 4.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR17"
   },
   {
@@ -2769,7 +2601,6 @@
     "name": "Coconut Water (Hnan Yay)",
     "description": "Chilled coconut water served in a young coconut, perfect for quenching your thirst.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR18"
   },
   {
@@ -2778,7 +2609,6 @@
     "name": "Burmese Milk Tea (Lahpet Yay Lapyan)",
     "description": "A strong black tea infused with condensed milk, giving it a creamy and sweet flavor.",
     "price": 4.99,
-    "diet": ["Vegetarian"],
     "allergens": ["Dairy"],
     "id": "MMR19"
   },
@@ -2788,7 +2618,6 @@
     "name": "Lime Soda (Yay Kyaw Sone)",
     "description": "A fizzy lime soda with a hint of sweetness, served over ice.",
     "price": 3.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR20"
   },
   {
@@ -2797,7 +2626,6 @@
     "name": "Mont Lone Yay Paw",
     "description": "A traditional Burmese dessert made with glutinous rice balls filled with jaggery and coated in grated coconut.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR21"
   },
   {
@@ -2806,7 +2634,6 @@
     "name": "Mote Lone Yay Paw",
     "description": "Similar to Mont Lone Yay Paw, but filled with crushed peanuts instead of jaggery.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "allergens": ["Peanuts"],
     "id": "MMR22"
   },
@@ -2816,7 +2643,6 @@
     "name": "Shwe Yin Aye",
     "description": "A delightful dessert soup made with coconut milk, jelly, tapioca pearls, and various colorful ingredients.",
     "price": 7.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR23"
   },
   {
@@ -2825,7 +2651,6 @@
     "name": "Kyauk Kyaw",
     "description": "Sweet jelly made from agar agar, flavored with pandan, coconut, or fruit essences, often served with palm sugar syrup.",
     "price": 5.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR24"
   },
   {
@@ -2834,7 +2659,6 @@
     "name": "Htamanè",
     "description": "A traditional Burmese dessert made with sticky rice, jaggery, and grated coconut, often enjoyed during festivals.",
     "price": 6.99,
-    "diet": ["Vegetarian", "Vegan"],
     "id": "MMR25"
   }
 ]

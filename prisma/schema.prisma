@@ -5,20 +5,29 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+  // If you want to use Prisma Migrate, you will need to manually create a shadow database
+  // https://neon.tech/docs/guides/prisma-migrate#configure-a-shadow-database-for-prisma-migrate
+  // make sure to append ?connect_timeout=10 to the connection string
+  // shadowDatabaseUrl = env(“SHFoodTypeADOW_DATABASE_URL”)
 }
 
 model Food {
-  id          String      @id @unique
-  country     Country
-  type        FoodType
+  id          String   @id @unique
+  country     String
+  type        String
   name        String
   description String
-  price       Int
+  price       Float
   images      String[]
-  allergens   Allergens[]
+  allergens   String[]
 }
 
 model User {
@@ -35,20 +44,20 @@ model Cart {
   id       Int        @id @unique @default(autoincrement())
   items    CartItem[]
   date     DateTime
-  total    Int
+  total    Float
   user     User       @relation(fields: [userId], references: [id])
   codeUsed String
   userId   String     @unique
 }
 
 model CartItem {
-  id                  String   @id @unique
-  type                FoodType
+  id                  String @id @unique
+  type                String
   name                String
-  price               Int
+  price               Float
   quantity            Int
   specialInstructions String
-  Cart                Cart?    @relation(fields: [cartId], references: [id])
+  Cart                Cart?  @relation(fields: [cartId], references: [id])
   cartId              Int?
 }
 
@@ -57,42 +66,42 @@ model Purchase {
   User User[]
 }
 
-enum Country {
-  Philippines
-  Myanmar
-  Malaysia
-  Indonesia
-  Singapore
-  Thailand
-  Vietnam
-  EastTimor
-  Brunei
-  Laos
-  Cambodia
-}
+// enum Country {
+//   Philippines
+//   Myanmar
+//   Malaysia
+//   Indonesia
+//   Singapore
+//   Thailand
+//   Vietnam
+//   EastTimor
+//   Brunei
+//   Laos
+//   Cambodia
+// }
 
-enum Allergens {
-  Peanuts
-  Crustaceans
-  Soy
-  Wheat
-  Fish
-  Coconut
-  Eggs
-  Nuts
-  Shellfish
-  Dairy
-  Pork
-  Seafood
-  Shrimp
-  Mollusks
-  Sesame
-  Poultry
-}
+// enum Allergens {
+//   Peanuts
+//   Crustaceans
+//   Soy
+//   Wheat
+//   Fish
+//   Coconut
+//   Eggs
+//   Nuts
+//   Shellfish
+//   Dairy
+//   Pork
+//   Seafood
+//   Shrimp
+//   Mollusks
+//   Sesame
+//   Poultry
+// }
 
-enum FoodType {
-  Appetizer
-  Main
-  Drink
-  Dessert
-}
+// enum FoodType {
+//   Appetizer
+//   Main
+//   Drink
+//   Dessert
+// }

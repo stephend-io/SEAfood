@@ -2,7 +2,7 @@ import { configureStore, combineReducers, ThunkAction, Action } from '@reduxjs/t
 import { authSlice } from './authSlice'
 import { cartSlice } from './cartSlice'
 import { createWrapper } from 'next-redux-wrapper'
-import { persistReducer, persistStore } from 'redux-persist'
+import { persistReducer, persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist'
 import { menuSlice } from './menuSlice'
 // import storage from 'redux-persist/lib/storage'
 
@@ -31,6 +31,12 @@ const makeConfiguredStore = () =>
   configureStore({
     reducer: rootReducer,
     devTools: true,
+    // middleware: (getDefaultMiddleware) =>
+    //   getDefaultMiddleware({
+    //     serializableCheck: {
+    //       ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    //     },
+    //   }),
   })
 
 export const makeStore = () => {
