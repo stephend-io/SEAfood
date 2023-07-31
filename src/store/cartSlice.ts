@@ -32,7 +32,7 @@ export const cartSlice = createSlice({
       state.totalCartItems += action.payload.quantity
     },
     setCart(state, action: PayloadAction<boolean>) {
-      state.cartShown = action.payload
+      if (state.cartShown !== action.payload) state.cartShown = action.payload
     },
     toggleCart(state) {
       state.cartShown = !state.cartShown

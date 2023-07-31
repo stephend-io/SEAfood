@@ -5,10 +5,10 @@ import Image from 'next/image'
 import { OrderType } from '../../types'
 import AbsoluteCart from '@/components/AbsoluteCart'
 import { useDispatch, useSelector } from 'react-redux'
-import cartSlice, { actions, addToCart, getTotalCartItems, setCartItems } from '@/store/cartSlice'
+import cartSlice, { actions, addToCart, getCartShown, getTotalCartItems, setCart, setCartItems } from '@/store/cartSlice'
 import { getFontOverrideCss } from 'next/dist/server/font-utils'
 import FoodModal from '@/components/FoodModal'
-import { getSelectedMenuItem, setSelectedMenuItem } from '@/store/menuSlice'
+import { clearSelectedMenuItem, getSelectedMenuItem, setSelectedMenuItem } from '@/store/menuSlice'
 const mockData = {
   foodCategories: ['Appetizer', 'Main', 'Drink', 'Dessert'],
   specials: {},
@@ -184,7 +184,8 @@ const Menu = () => {
   const [isSearchOffScreen, setIsSearchOffScreen] = useState(false)
   const [showFilters, setShowFilters] = useState(true)
   const [menuView, setMenuView] = useState<MenuViews>('Menu')
-  const [selectedItemID, setSelectedItemID] = useState('')
+  const [hoveredItemID, setHoveredItemID] = useState('')
+  const selectedMenuItemID = useSelector(getSelectedMenuItem)
   const [itemNos, setItemNos] = useState<Record<string, number>>({})
   const [selectedMenuNumberItems, setSelectedMenuNumberItems] = useState(1)
 
@@ -192,8 +193,9 @@ const Menu = () => {
   const addToCartToo = useSelector(actions.addToCart)
   const addToCartOne = useSelector(addToCart)
   const dispatch = useDispatch()
+  const toggled = useSelector(getCartShown)
 
-  console.log('rerendered')
+  // console.log('rerendered')
   // useEffect(() => {
   // 500ms timeout is to account for component transitioning and changing sizes
   // setTimeout(() => {
@@ -236,6 +238,29 @@ const Menu = () => {
   function cb() {
     console.log('cb is caled')
   }
+
+  useEffect(() => {
+    function hideCartCallback(e: KeyboardEvent) {
+      if (e.key === 'Escape') {
+        dispatch(setCart(true))
+      }
+    }
+    function hideModalCallback(e: KeyboardEvent) {
+      if (e.key === 'Escape') {
+        dispatch(clearSelectedMenuItem())
+      }
+    }
+    if (selectedMenuItemID) {
+      window.addEventListener('keydown', hideModalCallback)
+    }
+    if (!toggled) {
+      window.addEventListener('keydown', hideCartCallback)
+    }
+    return () => {
+      window.removeEventListener('keydown', hideCartCallback)
+      window.removeEventListener('keydown', hideModalCallback)
+    }
+  }, [toggled, selectedMenuItemID])
 
   return (
     <div className="inherit flex w-full justify-around pt-6">
@@ -342,7 +367,7 @@ const Menu = () => {
             {data.items.map((foodIn, index) => {
               const foodItem = foodIn as CartItem
               return (
-                <div
+                <button
                   className={`${
                     // Dirty hack to fix the last item always appearing a few pixels higher than expected
                     // index === data.items.length - 1 && ' border-2 border-dashed border-secondary outline-0 '
@@ -351,7 +376,7 @@ const Menu = () => {
                       : 'w-full md:w-[45%] lg:w-[33%] xl:w-[24%]'
                   } group relative flex items-center justify-between gap-1 overflow-visible bg-primary p-4 outline-dashed outline-2 outline-secondary transition-all duration-75 hover:z-50  hover:cursor-pointer hover:shadow-2xl hover:outline hover:outline-4 md:aspect-square md:flex-col md:hover:scale-105  md:hover:p-1 `}
                   onMouseEnter={() => {
-                    setSelectedItemID(foodItem.id)
+                    setHoveredItemID(foodItem.id)
                     const currItems = itemNos[foodItem.id]
                     currItems ? setSelectedMenuNumberItems(currItems) : setSelectedMenuNumberItems(1)
                   }}
@@ -397,7 +422,7 @@ const Menu = () => {
                         <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'<'}</button>
                         <button className="bg-slate-100 p-2 text-center opacity-70 hover:bg-slate-200 hover:opacity-90 ">{'>'}</button>
                       </div> */}
-                    {selectedItemID === foodItem.id && (
+                    {hoveredItemID === foodItem.id && (
                       <div className="invisible bottom-2 z-50 flex h-[10%] w-full items-center justify-between self-end px-2 pb-4 group-hover:visible">
                         <abbr title={foodItem.country}>
                           <Image alt={`Flag of ${foodItem.country}`} width={35} height={35} src={`/icons/${foodItem.country}.svg`} />
@@ -456,7 +481,7 @@ const Menu = () => {
                     </div>
                     <div className="line-clamp-2 text-sm tracking-wide  md:group-hover:text-xs">{foodItem.description}</div>
                   </div>
-                </div>
+                </button>
               )
             })}
           </div>

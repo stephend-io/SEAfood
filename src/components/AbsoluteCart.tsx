@@ -37,7 +37,8 @@ const AbsoluteCart = () => {
     function escapeCallback(e: KeyboardEvent) {
       if (e.key === 'Escape') {
         // setToggled(false)
-        dispatch(setCart(false))
+        // alert('Escape hit')
+        dispatch(setCart(true))
       }
     }
 
@@ -67,12 +68,13 @@ const AbsoluteCart = () => {
   // if (toggled)
   return (
     <div
-      className={`fixed bottom-2 right-2 z-[60] flex flex-col overflow-scroll border-4 border-secondary bg-primary  text-secondary  transition-[max-height] duration-[400ms] ease-linear scrollbar-hide ${
+      className={`fixed bottom-2 right-2 z-[60] flex flex-col overflow-scroll border-4 border-secondary bg-primary text-secondary  shadow-2xl  transition-[max-height] duration-[400ms] ease-linear scrollbar-hide ${
         !toggled ? 'max-h-[70%] min-h-0  max-w-[70%] ' : 'max-h-[0] max-w-[0] '
       } transition-all duration-500 ease-linear`}
       onClick={() => dispatch(toggleCart())}
     >
       <div className="min-w-[300px] p-4">
+        <div className="py-2 text-4xl font-black">Order:</div>
         {Object.entries(foodItems).map((category, index) => {
           const [categoryName, categoryValue] = category
           return (
@@ -115,7 +117,7 @@ export function CartToo() {
   const totalItems = useSelector(getTotalCartItems)
 
   return (
-    <div className="fixed bottom-3 right-[0.1rem] z-[61] h-[2rem] hover:opacity-80 active:opacity-100 active:saturate-150">
+    <div className="fixed bottom-4 right-[0.1rem] z-[61] h-[2rem] hover:opacity-80 active:opacity-100 active:saturate-150">
       <button
         onClick={() => {
           // alert('clicked')

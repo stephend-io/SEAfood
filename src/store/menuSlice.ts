@@ -18,6 +18,7 @@ export const menuSlice = createSlice({
       state.selectedItemId = action.payload
     },
     clearSelectedMenuItem(state) {
+      alert('current menuItem is: ' + state.selectedItemId)
       state.selectedItemId = undefined
     },
     // setmenuItems(state, action) {
