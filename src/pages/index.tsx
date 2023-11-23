@@ -1,7 +1,7 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { SetStateAction, useEffect, useState } from 'react'
-import { Head } from 'next/document'
 import sample from '@/public/images/BRN0-0.png'
 import { mock } from 'node:test'
 import { dateSplicer } from '@/utils'
@@ -12,13 +12,14 @@ import Specials from './Specials'
 import { useDispatch, useSelector } from 'react-redux'
 import AbsoluteCart, { CartToo } from '@/components/AbsoluteCart'
 import { getSelectedMenuItem } from '@/store/menuSlice'
+
 import FoodModal from '@/components/FoodModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const restaurantDetails = {
-  name: 'Lorem Ipsum',
-  tagline: 'Dolor sit amet consectetur adipiscing',
+  name: 'SEAfood',
+  tagline: 'A restaurant concept made with React and Redux',
   address: '1234 Yonge St Toronto, ON M4T 1W5 Canada',
   phoneNo: '647 241 3030',
 
@@ -42,7 +43,7 @@ export default function Home() {
 
   const id = useSelector(getSelectedMenuItem)
   return (
-    <div className="relative flex w-full flex-col items-start justify-start bg-primary font-primaryFont text-secondary scrollbar-hide">
+    <div className="relative flex w-full flex-col items-start justify-start bg-primary px-4 font-primaryFont text-secondary scrollbar-hide">
       {id && <FoodModal />}
       <Header />
       <Body />
@@ -69,8 +70,8 @@ const Header = () => {
   return (
     <div className=" flex w-full items-center justify-around overflow-hidden  py-4 text-2xl ">
       <div className="space-around flex w-1/3 flex-col gap-2 text-lg ">
-        {data.address.split(',').map((str) => {
-          return <div>{str}</div>
+        {data.address.split(',').map((str, index) => {
+          return <div key={index}>{str}</div>
         })}
         <a className="font-semibold" href={`tel:${data.phoneNo.replaceAll(' ', '-')}`}>
           {data.phoneNo}
@@ -81,10 +82,14 @@ const Header = () => {
         <div>{data.tagline}</div>
       </div>
       <div className="flex w-1/3 flex-col items-end justify-end gap-2">
-        <div className="font-semibold">Today's Hours:</div>
+        <div className="font-semibold">Today{`'`}s Hours:</div>
         {date?.getDay() >= 0 &&
-          dateSplicer(data.schedule[date?.getDay()]).map((dateFrame) => {
-            return <div className="text-lg tracking-wide">{dateFrame}</div>
+          dateSplicer(data.schedule[date?.getDay()]).map((dateFrame, index) => {
+            return (
+              <div className="text-lg tracking-wide" key={index}>
+                {dateFrame}
+              </div>
+            )
           })}
       </div>
     </div>

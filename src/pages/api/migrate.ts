@@ -8,15 +8,13 @@ type Data = {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  Migrate()
+  // Migrate()
   res.status(200)
 }
 
 export function Migrate() {
   const dir = __dirname
-  const filePath = '/home/stephen/portfolio/a2a/src/pages/api/data.json'
+  // const filePath = '/home/stephen/portfolio/a2a/src/pages/api/data.json'
 
-  const data = readFileSync(filePath)
-  console.log(JSON.parse(data))
   // console.log('migrate route hit')
 }

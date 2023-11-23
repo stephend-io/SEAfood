@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         {/* <link rel="stylesheet" href="https://use.typekit.net/plm1izr.css" /> */}
         <link rel="stylesheet" href="https://use.typekit.net/lvx4tbz.css" />
+        <title>SEAfood</title>
       </Head>
 
       <body>

@@ -9,6 +9,13 @@ import cartSlice, { actions, addToCart, getCartShown, getTotalCartItems, setCart
 import { getFontOverrideCss } from 'next/dist/server/font-utils'
 import FoodModal from '@/components/FoodModal'
 import { clearSelectedMenuItem, getSelectedMenuItem, setSelectedMenuItem } from '@/store/menuSlice'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'SEAfood TWO',
+  description: 'SEAfood homepage',
+}
+
 const mockData = {
   foodCategories: ['Appetizer', 'Main', 'Drink', 'Dessert'],
   specials: {},
@@ -264,7 +271,7 @@ const Menu = () => {
 
   return (
     <div className="inherit flex w-full justify-around pt-6">
-      <div className="flex h-full w-[97%] justify-around bg-primary">
+      <div className=" flex h-full w-[97%] justify-around bg-primary">
         {/* Cart */}
         <AbsoluteCart />
         {/* SearchFilters */}
@@ -280,9 +287,9 @@ const Menu = () => {
                 </button>
               </div>
               <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!categoriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
-                {data.foodCategories.map((category) => {
+                {data.foodCategories.map((category, index) => {
                   return (
-                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`} key={index}>
                       <div className="flex items-center gap-1">
                         <div>{category}</div>
                         <Image width={30} height={30} alt={`icon of ${category}`} src={`/icons/${category}.svg`} />
@@ -305,7 +312,7 @@ const Menu = () => {
               <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!countriesToggled ? 'max-h-[50vh]' : 'max-h-0'}`}>
                 {data.countries.map((country) => {
                   return (
-                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`} key={country}>
                       <div className="flex items-center gap-1">
                         <div>{country}</div>
                         <Image width={30} height={30} alt={`icon of ${country}`} src={`/icons/${country}.svg`} />
@@ -327,7 +334,7 @@ const Menu = () => {
               <div className={`overflow-hidden transition-[max-height] duration-[400ms] ease-linear ${!allergensToggled ? 'max-h-[80vh]' : 'max-h-0'}`}>
                 {data.allergens.map((allergen) => {
                   return (
-                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`}>
+                    <div className={` flex items-center justify-between gap-1 transition-all duration-200`} key={allergen}>
                       <div className="flex items-center gap-1">
                         <div>{allergen}</div>
                         <Image width={30} height={30} alt={`icon of ${allergen}`} src={`/icons/${allergen}.svg`} />
@@ -471,7 +478,7 @@ const Menu = () => {
 
                         <div className="flex max-w-[60%] pl-2 font-mono text-base">
                           {foodItem.allergens?.map((allergen) => (
-                            <abbr title={allergen}>
+                            <abbr title={allergen} key={allergen}>
                               <Image width={25} height={25} alt={allergen} src={`/icons/${allergen}.svg`} />
                             </abbr>
                           ))}

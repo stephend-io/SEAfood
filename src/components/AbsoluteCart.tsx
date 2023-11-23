@@ -78,11 +78,11 @@ const AbsoluteCart = () => {
         {Object.entries(foodItems).map((category, index) => {
           const [categoryName, categoryValue] = category
           return (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={index}>
               <div className="text-2xl font-bold">{categoryName}s</div>
-              {categoryValue.map((item) => {
+              {categoryValue.map((item, index) => {
                 return (
-                  <div className="flex justify-between">
+                  <div className="flex justify-between" key={item.id}>
                     <div className="w-3/4">
                       {item.name} {item.quantity > 1 && `x ${item.quantity}`}
                     </div>
